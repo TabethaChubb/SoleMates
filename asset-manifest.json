@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Team7_Solemates/static/css/main.39f589df.css",
+    "main.js": "/Team7_Solemates/static/js/main.a8d2eb5b.js",
+    "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
+    "index.html": "/Team7_Solemates/index.html",
+    "main.39f589df.css.map": "/Team7_Solemates/static/css/main.39f589df.css.map",
+    "main.a8d2eb5b.js.map": "/Team7_Solemates/static/js/main.a8d2eb5b.js.map",
+    "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39f589df.css",
+    "static/js/main.a8d2eb5b.js"
+  ]
+}
