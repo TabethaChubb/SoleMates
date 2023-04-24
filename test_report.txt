@@ -2,20 +2,11 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-Browserslist: caniuse-lite is outdated. Please run:
-  npx browserslist@latest --update-db
-  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/App.test.tsx
-  ✓ renders the course name somewhere (32 ms)
-
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        1.699 s
-Ran all test suites.
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In /home/runner/work/Team7_Solemates/Team7_Solemates
+  8 files checked.
+  testMatch: /home/runner/work/Team7_Solemates/Team7_Solemates/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/runner/work/Team7_Solemates/Team7_Solemates/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+  testPathIgnorePatterns: /node_modules/ - 8 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches

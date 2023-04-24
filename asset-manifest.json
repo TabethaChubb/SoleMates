@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/Team7_Solemates/static/css/main.39f589df.css",
-    "main.js": "/Team7_Solemates/static/js/main.a8d2eb5b.js",
+    "main.css": "/Team7_Solemates/static/css/main.82deaad4.css",
+    "main.js": "/Team7_Solemates/static/js/main.7cac0c35.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
+    "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
+    "static/media/brandSelectBackground.gif": "/Team7_Solemates/static/media/brandSelectBackground.1508d9b815e5d70708ef.gif",
+    "static/media/3.png": "/Team7_Solemates/static/media/3.670909fb82ba31a2629d.png",
+    "static/media/2.png": "/Team7_Solemates/static/media/2.0244fe5ede2e55f50bf6.png",
+    "static/media/1.png": "/Team7_Solemates/static/media/1.9089940b8aaf6d0748fd.png",
     "index.html": "/Team7_Solemates/index.html",
-    "main.39f589df.css.map": "/Team7_Solemates/static/css/main.39f589df.css.map",
-    "main.a8d2eb5b.js.map": "/Team7_Solemates/static/js/main.a8d2eb5b.js.map",
+    "main.82deaad4.css.map": "/Team7_Solemates/static/css/main.82deaad4.css.map",
+    "main.7cac0c35.js.map": "/Team7_Solemates/static/js/main.7cac0c35.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39f589df.css",
-    "static/js/main.a8d2eb5b.js"
+    "static/css/main.82deaad4.css",
+    "static/js/main.7cac0c35.js"
   ]
 }
