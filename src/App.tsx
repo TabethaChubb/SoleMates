@@ -21,6 +21,9 @@ function App(): JSX.Element {
                         <li>
                             <a href="">Bucket?</a>
                         </li>
+                        <li>
+                            <a href="">Wish List</a>
+                        </li>
                     </ul>
                 </nav>
                 <header>
