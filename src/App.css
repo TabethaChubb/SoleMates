@@ -131,6 +131,7 @@ header {
     position: relative;
 }
 .WISHLIST {
+    background: #85c1e9;
     position: relative;
     justify-content: center;
     display: flex;
