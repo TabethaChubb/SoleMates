@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
@@ -9,7 +10,7 @@ import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./userWishList";
 
 function App(): JSX.Element {
-    const [currList, setCurrList] = useState<Sneaker[]>([]);
+    const [currList, setWishList] = useState<Sneaker[]>([]);
 
     return (
         <div className="App">
@@ -73,7 +74,20 @@ function App(): JSX.Element {
                 </footer>
             </body>
             <footer className="WISHLIST">
-                <WishList sneakers={currList} />
+                <WishList
+                    sneakers={[
+                        //This line will be currList from the state instead of the example
+                        {
+                            model: "Air Max",
+                            brand: "Nike",
+                            size: [1, 7, 9, 10],
+                            price: 120,
+                            image: nikeAirMax,
+                            outOfStock: false,
+                            colors: ["orange", "black"]
+                        }
+                    ]}
+                />
             </footer>
         </div>
     );
