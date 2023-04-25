@@ -5,6 +5,7 @@ import "./App.css";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
+import logo from "../src/images/soleMatesLogo.jpg";
 
 function App(): JSX.Element {
     return (
@@ -23,6 +24,9 @@ function App(): JSX.Element {
                         </li>
                     </ul>
                 </nav>
+                <div className="logo">
+                    <img src={logo} alt="Logo" />
+                </div>
                 <header>
                     <div className="bg">
                         <div className="content">
