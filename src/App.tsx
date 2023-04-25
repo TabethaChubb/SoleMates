@@ -88,6 +88,8 @@ function App(): JSX.Element {
                             <a href="addi2">
                                 <img src={s1}></img>
                             </a>
+                            <div className="add2">Superstar</div>
+                            <div className="add2"></div>
                         </button>
                     </div>
                 </footer>
