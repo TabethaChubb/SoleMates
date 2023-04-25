@@ -15,4 +15,6 @@ export interface Sneaker {
     price: number;
     /** Whether or not this sneaker is out of stock */
     outOfStock: boolean;
+    /** The main image of the sneaker as a url */
+    image: string;
 }
