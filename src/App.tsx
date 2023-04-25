@@ -21,6 +21,14 @@ function App(): JSX.Element {
 
             <body>
                 <nav>
+                    <div className="dropdown">
+                        <button className="dropbtn">Select User</button>
+                        <div className="dropdown-content">
+                            <a href="customer">Customer</a>
+                            <a href="employee">Employee</a>
+                            <a href="owner">Owner</a>
+                        </div>
+                    </div>
                     <ul>
                         <li>
                             <a href="">Bucket?</a>
