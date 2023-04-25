@@ -1,17 +1,22 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
+import { Sneaker } from "./interfaces/sneaker";
+import { WishList } from "./userWishList";
 
 function App(): JSX.Element {
+    const [currList, setCurrList] = useState<Sneaker[]>([]);
+
     return (
         <div className="App">
             <head>
                 <title>Navpage mockup</title>
             </head>
+
             <body>
                 <nav>
                     <ul>
@@ -67,6 +72,9 @@ function App(): JSX.Element {
                     <h1>PUMA</h1>
                 </footer>
             </body>
+            <footer className="WISHLIST">
+                <WishList sneakers={currList} />
+            </footer>
         </div>
     );
 }

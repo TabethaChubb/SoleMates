@@ -130,3 +130,9 @@ header {
     width: 100%;
     position: relative;
 }
+.WISHLIST {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
