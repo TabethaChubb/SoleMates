@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-//import { Button } from "react-bootstrap";
+import React from "react";
 import { Sneaker } from "./interfaces/sneaker";
-import { SneakerBrand } from "./interfaces/sneaker";
+//import { SneakerBrand } from "./interfaces/sneaker";
 
 interface WishListProp {
     sneakers: Sneaker[];
