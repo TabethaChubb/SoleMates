@@ -8,6 +8,7 @@ import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./userWishList";
+import logo from "../src/images/soleMatesLogo.jpg";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([]);
@@ -29,6 +30,9 @@ function App(): JSX.Element {
                         </li>
                     </ul>
                 </nav>
+                <div className="logo">
+                    <img src={logo} alt="Logo" />
+                </div>
                 <header>
                     <div className="bg">
                         <div className="content">
