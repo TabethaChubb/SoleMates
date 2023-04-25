@@ -9,6 +9,8 @@ import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./userWishList";
 import logo from "../src/images/soleMatesLogo.jpg";
+import R1 from "../src/images/R1.png";
+import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([]);
@@ -75,10 +77,24 @@ function App(): JSX.Element {
                     <div id="adidas">
                         <h1>ADIDAS</h1>
                     </div>
+                    <div className="drop">
+                        <button className="sneaker1">
+                            <a href="addi1">
+                                <img src={R1}></img>
+                            </a>
+                            <div className="ad1">R1</div>
+                        </button>
+                        <button className="addi2">
+                            <a href="addi2">
+                                <img src={s1}></img>
+                            </a>
+                        </button>
+                    </div>
                 </footer>
                 <footer className="NIKE">
                     <div id="nike"></div>
                     <h1>NIKE</h1>
+                    <a href="Air Force 1">Air force 1</a>
                 </footer>
                 <footer className="PUMA">
                     <div id="puma"></div>
