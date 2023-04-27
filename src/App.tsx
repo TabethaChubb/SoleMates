@@ -13,8 +13,38 @@ import R1 from "../src/images/R1.png";
 import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
-    const [currList, setWishList] = useState<Sneaker[]>([]);
+    const [currList, setWishList] = useState<Sneaker[]>([
+        {
+            model: "Air Max",
+            brand: "Nike",
+            size: [1, 7, 9, 10],
+            price: 120,
+            image: nikeAirMax,
+            outOfStock: false,
+            colors: ["orange", "black"]
+        }
+    ]);
     const [currRole, setRole] = useState<role>();
+
+    // function removeSneakerWish(event: React.ChangeEvent<HTMLInputElement>) {
+    //     setWishList(
+    //         currList.filter(
+    //             (shoe: Sneaker): boolean =>
+    //         )
+    //     );
+    // }
+
+    //Used for all buckets/draggable elements
+    const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        const droppedSneaker = JSON.parse(
+            event.dataTransfer.getData("application/json")
+        ) as Sneaker;
+        setWishList([...currList, droppedSneaker]);
+    };
+    const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+    };
 
     return (
         <div className="App">
@@ -25,7 +55,9 @@ function App(): JSX.Element {
             <body>
                 <nav>
                     <div className="dropdown">
-                        <button className="dropbtn">Select User</button>
+                        <button className="dropbtn">
+                            Select User: {currRole}
+                        </button>
                         <div className="dropdown-content">
                             <a href="customer">Customer</a>
                             <a href="employee">Employee</a>
@@ -40,6 +72,13 @@ function App(): JSX.Element {
                             <a href="">Bucket?</a>
                         </li>
                     </ul>
+                    <div
+                        className="wishlistAddDrop-Zone"
+                        onDrop={handleDrop}
+                        onDragOver={handleDragOver}
+                    >
+                        Drop Shoe to Add to Wishlist ⭐
+                    </div>
                 </nav>
                 <div className="logo">
                     <img src={logo} alt="Logo" />
@@ -105,20 +144,7 @@ function App(): JSX.Element {
                 </footer>
             </body>
             <footer className="WISHLIST">
-                <WishList
-                    sneakers={[
-                        //This line will be currList from the state instead of the example
-                        {
-                            model: "Air Max",
-                            brand: "Nike",
-                            size: [1, 7, 9, 10],
-                            price: 120,
-                            image: nikeAirMax,
-                            outOfStock: false,
-                            colors: ["orange", "black"]
-                        }
-                    ]}
-                />
+                <WishList sneakers={currList} />
             </footer>
         </div>
     );
