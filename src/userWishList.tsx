@@ -15,7 +15,7 @@ export function WishList({ sneakers }: WishListProp): JSX.Element {
     };
 
     return (
-        <div>
+        <div className="sneaker-grid">
             <h3>My Wish List</h3>
             {sneakers.map((sneaker) => {
                 return (
