@@ -195,8 +195,8 @@ header {
 .WISHLIST {
     background: #85c1e9;
     position: relative;
-    justify-content: center;
-    display: flex;
+    /*justify-content: center;*/
+    /*display: flex;*/
     height: 100vh;
 }
 .sneakerIMAGE {
@@ -216,9 +216,11 @@ header {
     transform: rotate(-90deg);
 }
 .sneaker-card {
+    width: 300px;
+    height: 300px;
     border: 1px solid rgb(52, 102, 105);
     padding: 5px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 /** CONTENT **/
@@ -255,4 +257,10 @@ header {
     font-size: small;
     padding: 10px;
     border: 5px dashed black;
+}
+
+.sneaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
