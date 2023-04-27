@@ -229,3 +229,30 @@ header {
     display: inline;
     font-weight: 700;
 }
+
+.wishlistAddDrop-Zone {
+    background-color: #71c892;
+    width: 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+    border: 5px dashed black;
+}
+.wishlistDeleteDrop-Zone {
+    background-color: #c87171;
+    width: 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+    border: 5px dashed black;
+}
