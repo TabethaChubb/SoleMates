@@ -34,13 +34,25 @@ function App(): JSX.Element {
     //     );
     // }
 
-    //Used for all buckets/draggable elements
-    const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+    //Adds sneakers to user wishlist
+    const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
         const droppedSneaker = JSON.parse(
             event.dataTransfer.getData("application/json")
         ) as Sneaker;
         setWishList([...currList, droppedSneaker]);
+    };
+    //Deletes sneakers from user wishlist
+    const handleDeleteDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        const droppedSneaker = JSON.parse(
+            event.dataTransfer.getData("application/json")
+        ) as Sneaker;
+        setWishList(
+            currList.filter(
+                (shoe: Sneaker): boolean => shoe.model !== droppedSneaker.model
+            )
+        );
     };
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
@@ -74,10 +86,17 @@ function App(): JSX.Element {
                     </ul>
                     <div
                         className="wishlistAddDrop-Zone"
-                        onDrop={handleDrop}
+                        onDrop={handleAddDrop}
                         onDragOver={handleDragOver}
                     >
-                        Drop Shoe to Add to Wishlist ⭐
+                        Drop Shoe to ADD to Wishlist ⭐
+                    </div>
+                    <div
+                        className="wishlistDeleteDrop-Zone"
+                        onDrop={handleDeleteDrop}
+                        onDragOver={handleDragOver}
+                    >
+                        Drop Shoe to DELETE from Wishlist ⭐
                     </div>
                 </nav>
                 <div className="logo">
