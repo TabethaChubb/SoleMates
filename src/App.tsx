@@ -26,14 +26,6 @@ function App(): JSX.Element {
     ]);
     const [currRole, setRole] = useState<role>();
 
-    // function removeSneakerWish(event: React.ChangeEvent<HTMLInputElement>) {
-    //     setWishList(
-    //         currList.filter(
-    //             (shoe: Sneaker): boolean =>
-    //         )
-    //     );
-    // }
-
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
