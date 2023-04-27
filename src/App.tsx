@@ -6,7 +6,7 @@ import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
-import { Sneaker } from "./interfaces/sneaker";
+import { Sneaker, role } from "./interfaces/sneaker";
 import { WishList } from "./userWishList";
 import logo from "../src/images/soleMatesLogo.jpg";
 import R1 from "../src/images/R1.png";
@@ -14,6 +14,7 @@ import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([]);
+    const [currRole, setRole] = useState<role>();
 
     return (
         <div className="App">
