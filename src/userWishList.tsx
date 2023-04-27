@@ -12,7 +12,11 @@ export function WishList({ sneakers }: WishListProp): JSX.Element {
             <h3>My Wish List</h3>
             {sneakers.map((sneaker) => {
                 return (
-                    <div key={sneaker.model} className="sneaker-card">
+                    <div
+                        key={sneaker.model}
+                        className="sneaker-card"
+                        draggable="true"
+                    >
                         <img
                             src={sneaker.image}
                             alt={sneaker.model}
