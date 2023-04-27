@@ -1,5 +1,6 @@
 /** SneakerType influences when a sneaker should show up on the main list since we have the brands in different sections */
 export type SneakerBrand = "Nike" | "Puma" | "Adidas";
+export type role = "Customer" | "Employee" | "Owner";
 
 /** A representation of a Question in a quizzing application */
 export interface Sneaker {
