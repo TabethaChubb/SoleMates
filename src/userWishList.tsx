@@ -7,12 +7,24 @@ interface WishListProp {
 }
 
 export function WishList({ sneakers }: WishListProp): JSX.Element {
+    const handleDragStart = (
+        event: React.DragEvent<HTMLDivElement>,
+        sneaker: Sneaker
+    ) => {
+        event.dataTransfer.setData("application/json", JSON.stringify(sneaker));
+    };
+
     return (
-        <div>
+        <div className="sneaker-grid">
             <h3>My Wish List</h3>
             {sneakers.map((sneaker) => {
                 return (
-                    <div key={sneaker.model} className="sneaker-card">
+                    <div
+                        key={sneaker.model}
+                        className="sneaker-card"
+                        draggable="true"
+                        onDragStart={(event) => handleDragStart(event, sneaker)}
+                    >
                         <img
                             src={sneaker.image}
                             alt={sneaker.model}
