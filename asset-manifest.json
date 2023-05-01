@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Team7_Solemates/static/css/main.9989958f.css",
-    "main.js": "/Team7_Solemates/static/js/main.8e27c082.js",
+    "main.css": "/Team7_Solemates/static/css/main.686988ce.css",
+    "main.js": "/Team7_Solemates/static/js/main.c5e12ff1.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/anthony-a-JldH_vLwdYs-unsplash.jpg": "/Team7_Solemates/static/media/anthony-a-JldH_vLwdYs-unsplash.52e818cde241d9d1f42d.jpg",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
@@ -12,12 +12,12 @@
     "static/media/R1.png": "/Team7_Solemates/static/media/R1.bc67aee2dfae36aec07d.png",
     "static/media/1.png": "/Team7_Solemates/static/media/1.9089940b8aaf6d0748fd.png",
     "index.html": "/Team7_Solemates/index.html",
-    "main.9989958f.css.map": "/Team7_Solemates/static/css/main.9989958f.css.map",
-    "main.8e27c082.js.map": "/Team7_Solemates/static/js/main.8e27c082.js.map",
+    "main.686988ce.css.map": "/Team7_Solemates/static/css/main.686988ce.css.map",
+    "main.c5e12ff1.js.map": "/Team7_Solemates/static/js/main.c5e12ff1.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9989958f.css",
-    "static/js/main.8e27c082.js"
+    "static/css/main.686988ce.css",
+    "static/js/main.c5e12ff1.js"
   ]
 }
