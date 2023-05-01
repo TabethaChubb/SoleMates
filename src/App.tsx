@@ -76,20 +76,28 @@ function App(): JSX.Element {
                             <a href="">Bucket?</a>
                         </li>
                     </ul>
-                    <div
-                        className="wishlistAddDrop-Zone"
-                        onDrop={handleAddDrop}
-                        onDragOver={handleDragOver}
-                    >
-                        Drop Shoe to ADD to Wishlist ⭐
-                    </div>
-                    <div
-                        className="wishlistDeleteDrop-Zone"
-                        onDrop={handleDeleteDrop}
-                        onDragOver={handleDragOver}
-                    >
-                        Drop Shoe to DELETE from Wishlist ⭐
-                    </div>
+                </nav>
+                <nav className="secondary">
+                    <ul>
+                        <li>
+                            <div
+                                className="wishlistAddDrop-Zone"
+                                onDrop={handleAddDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                Drop Shoe to ADD to Wishlist ⭐
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className="wishlistDeleteDrop-Zone"
+                                onDrop={handleDeleteDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                Drop Shoe to DELETE from Wishlist ⭐
+                            </div>
+                        </li>
+                    </ul>
                 </nav>
                 <div className="logo">
                     <img src={logo} alt="Logo" />
