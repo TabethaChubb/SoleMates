@@ -13,6 +13,10 @@ import R1 from "../src/images/R1.png";
 import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
+    const [role, setRole] = useState<role>();
+
+    const setRoleCustomer = setRole("Customer");
+
     const [currList, setWishList] = useState<Sneaker[]>([
         {
             model: "Air Max",
@@ -24,7 +28,6 @@ function App(): JSX.Element {
             colors: ["orange", "black"]
         }
     ]);
-    const [currRole, setRole] = useState<role>();
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -59,11 +62,11 @@ function App(): JSX.Element {
             <body>
                 <nav>
                     <div className="dropdown">
-                        <button className="dropbtn">
-                            Select User: {currRole}
-                        </button>
+                        <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
-                            <a href="customer">Customer</a>
+                            <button onClick={() => setRoleCustomer}>
+                                Customer
+                            </button>
                             <a href="employee">Employee</a>
                             <a href="owner">Owner</a>
                         </div>
