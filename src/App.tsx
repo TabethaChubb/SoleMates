@@ -24,7 +24,6 @@ function App(): JSX.Element {
             colors: ["orange", "black"]
         }
     ]);
-    const [currRole, setRole] = useState<role>();
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -50,6 +49,8 @@ function App(): JSX.Element {
         event.preventDefault();
     };
 
+    const [role, setRole] = useState<role>();
+
     return (
         <div className="App">
             <head>
@@ -59,13 +60,19 @@ function App(): JSX.Element {
             <body>
                 <nav>
                     <div className="dropdown">
-                        <button className="dropbtn">
-                            Select User: {currRole}
-                        </button>
+                        <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
-                            <a href="customer">Customer</a>
-                            <a href="employee">Employee</a>
-                            <a href="owner">Owner</a>
+                            <div className="button1">
+                                <button onClick={() => setRole("Customer")}>
+                                    Customer
+                                </button>
+                                <button onClick={() => setRole("Employee")}>
+                                    Employee
+                                </button>
+                                <button onClick={() => setRole("Owner")}>
+                                    Owner
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <ul>
