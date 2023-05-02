@@ -1,15 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
-/** import "./components/role.tsx"; **/
+import { NavBar } from "./components/NavBar";
 import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
-import { WishList } from "./userWishList";
+import { WishList } from "./components/userWishList";
 import logo from "../src/images/soleMatesLogo.jpg";
+import R1 from "../src/images/R1.png";
+import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([
@@ -47,9 +48,6 @@ function App(): JSX.Element {
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
     };
-
-    const [role, setRole] = useState<role>();
-
     return (
         <div className="App">
             <head>
@@ -57,36 +55,7 @@ function App(): JSX.Element {
             </head>
 
             <body>
-                <nav>
-                    <div className="dropdown">
-                        <button className="dropbtn">Select User: {role}</button>
-                        <div className="dropdown-content">
-                            <p>
-                                <button onClick={() => setRole("Customer")}>
-                                    Customer
-                                </button>
-                            </p>
-                            <p>
-                                <button onClick={() => setRole("Employee")}>
-                                    Employee
-                                </button>
-                            </p>
-                            <p>
-                                <button onClick={() => setRole("Owner")}>
-                                    Owner
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="">Bucket?</a>
-                        </li>
-                        <li>
-                            <a href="">Bucket?</a>
-                        </li>
-                    </ul>
-                </nav>
+                <NavBar></NavBar>
                 <nav className="secondary">
                     <ul>
                         <li>
@@ -146,10 +115,26 @@ function App(): JSX.Element {
                     <div id="adidas">
                         <h1>ADIDAS</h1>
                     </div>
+                    <div className="drop">
+                        <button className="sneaker1">
+                            <a href="addi1">
+                                <img src={R1}></img>
+                            </a>
+                            <div className="ad1">R1</div>
+                        </button>
+                        <button className="addi2">
+                            <a href="addi2">
+                                <img src={s1}></img>
+                            </a>
+                            <div className="add2">Superstar</div>
+                            <div className="add2"></div>
+                        </button>
+                    </div>
                 </footer>
                 <footer className="NIKE">
                     <div id="nike"></div>
                     <h1>NIKE</h1>
+                    <a href="Air Force 1">Air force 1</a>
                 </footer>
                 <footer className="PUMA">
                     <div id="puma"></div>
