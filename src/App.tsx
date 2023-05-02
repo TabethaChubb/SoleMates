@@ -62,17 +62,21 @@ function App(): JSX.Element {
                     <div className="dropdown">
                         <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
-                            <div className="button1">
+                            <p>
                                 <button onClick={() => setRole("Customer")}>
                                     Customer
                                 </button>
+                            </p>
+                            <p>
                                 <button onClick={() => setRole("Employee")}>
                                     Employee
                                 </button>
+                            </p>
+                            <p>
                                 <button onClick={() => setRole("Owner")}>
                                     Owner
                                 </button>
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <ul>
