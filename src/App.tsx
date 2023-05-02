@@ -23,7 +23,6 @@ function App(): JSX.Element {
             colors: ["orange", "black"]
         }
     ]);
-    const [currRole, setRole] = useState<role>();
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -49,6 +48,8 @@ function App(): JSX.Element {
         event.preventDefault();
     };
 
+    const [role, setRole] = useState<role>();
+
     return (
         <div className="App">
             <head>
@@ -58,13 +59,23 @@ function App(): JSX.Element {
             <body>
                 <nav>
                     <div className="dropdown">
-                        <button className="dropbtn">
-                            Select User: {currRole}
-                        </button>
+                        <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
-                            <a href="customer">Customer</a>
-                            <a href="employee">Employee</a>
-                            <a href="owner">Owner</a>
+                            <p>
+                                <button onClick={() => setRole("Customer")}>
+                                    Customer
+                                </button>
+                            </p>
+                            <p>
+                                <button onClick={() => setRole("Employee")}>
+                                    Employee
+                                </button>
+                            </p>
+                            <p>
+                                <button onClick={() => setRole("Owner")}>
+                                    Owner
+                                </button>
+                            </p>
                         </div>
                     </div>
                     <ul>
@@ -75,20 +86,28 @@ function App(): JSX.Element {
                             <a href="">Bucket?</a>
                         </li>
                     </ul>
-                    <div
-                        className="wishlistAddDrop-Zone"
-                        onDrop={handleAddDrop}
-                        onDragOver={handleDragOver}
-                    >
-                        Drop Shoe to ADD to Wishlist ⭐
-                    </div>
-                    <div
-                        className="wishlistDeleteDrop-Zone"
-                        onDrop={handleDeleteDrop}
-                        onDragOver={handleDragOver}
-                    >
-                        Drop Shoe to DELETE from Wishlist ⭐
-                    </div>
+                </nav>
+                <nav className="secondary">
+                    <ul>
+                        <li>
+                            <div
+                                className="wishlistAddDrop-Zone"
+                                onDrop={handleAddDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                Drop Shoe to ADD to Wishlist ⭐
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className="wishlistDeleteDrop-Zone"
+                                onDrop={handleDeleteDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                Drop Shoe to DELETE from Wishlist ⭐
+                            </div>
+                        </li>
+                    </ul>
                 </nav>
                 <div className="logo">
                     <img src={logo} alt="Logo" />
