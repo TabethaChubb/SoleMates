@@ -13,10 +13,6 @@ import R1 from "../src/images/R1.png";
 import s1 from "../src/images/s1.jpg";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<role>();
-
-    const setRoleCustomer = setRole("Customer");
-
     const [currList, setWishList] = useState<Sneaker[]>([
         {
             model: "Air Max",
@@ -53,6 +49,8 @@ function App(): JSX.Element {
         event.preventDefault();
     };
 
+    const [role, setRole] = useState<role>();
+
     return (
         <div className="App">
             <head>
@@ -64,11 +62,17 @@ function App(): JSX.Element {
                     <div className="dropdown">
                         <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
-                            <button onClick={() => setRoleCustomer}>
-                                Customer
-                            </button>
-                            <a href="employee">Employee</a>
-                            <a href="owner">Owner</a>
+                            <div className="button1">
+                                <button onClick={() => setRole("Customer")}>
+                                    Customer
+                                </button>
+                                <button onClick={() => setRole("Employee")}>
+                                    Employee
+                                </button>
+                                <button onClick={() => setRole("Owner")}>
+                                    Owner
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <ul>
