@@ -146,12 +146,12 @@ function App(): JSX.Element {
                     <div id="adidas">
                         <h1>ADIDAS</h1>
                     </div>
-                    <div className="drop">
-                        <AdiList></AdiList>
-                    </div>
+                    <div className="drop"></div>
                 </footer>
                 <footer className="NIKE">
-                    <div id="nike"></div>
+                    <div id="nike">
+                        <AdiList></AdiList>
+                    </div>
                     <h1>NIKE</h1>
                     <a href="Air Force 1">Air force 1</a>
                 </footer>

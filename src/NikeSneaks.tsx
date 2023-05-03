@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Sneaker } from "./interfaces/sneaker";
-import React from "react";
 import R1 from "../src/images/airf.jpg";
 import two from "../src/images/270.jpg";
 
-const inventory: Sneaker[] = [
+const NikeSneaks: Sneaker[] = [
     {
         model: "Air Force",
         colors: ["white", "black", "Red", "Light Blue", "orange"],
@@ -148,43 +146,4 @@ const inventory: Sneaker[] = [
         image: two
     }
 ];
-
-export function AdiList(): JSX.Element {
-    const [allSneaks] = useState<Sneaker[]>(inventory);
-    const handleDragStart = (
-        event: React.DragEvent<HTMLDivElement>,
-        sneaker: Sneaker
-    ) => {
-        event.dataTransfer.setData("application/json", JSON.stringify(sneaker));
-    };
-    return (
-        <div className="sneaker-grid">
-            {allSneaks.map((sneaker) => {
-                return (
-                    <div
-                        key={sneaker.model}
-                        className="sneaker-card"
-                        draggable="true"
-                        onDragStart={(event) => handleDragStart(event, sneaker)}
-                    >
-                        <img
-                            src={sneaker.image}
-                            alt={sneaker.model}
-                            className="sneakerIMAGE"
-                        />
-                        <div>
-                            <h4>{sneaker.model}</h4>
-                            Brand:<p className="description">{sneaker.brand}</p>
-                            Price:
-                            <p className="description"> {sneaker.price}</p>
-                            Sizes:
-                            <p className="description">
-                                {sneaker.size.join(", ")}
-                            </p>
-                        </div>
-                    </div>
-                );
-            })}
-        </div>
-    );
-}
+export default NikeSneaks;
