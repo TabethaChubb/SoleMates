@@ -2,9 +2,9 @@ import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
 const AdidasSneaks: Sneaker[] = [
     {
-        model: "Ultraboost Light Running Shoe",
+        model: "Super Liga OG Retro Sneakers",
         colors: ["Cloud white", "black", "Solar Red", "Blue", "grey"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12
@@ -16,7 +16,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "Superstar ADV",
         colors: ["white", "black", "Red", "Orange"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         price: 100,
         outOfStock: false,
@@ -25,7 +25,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "Solarcontrol Running Shoes",
         colors: ["Crystal white", "Core black", "Red", "Shadow Navy", "orange"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13,
             13.5, 14, 15.5, 15
@@ -37,7 +37,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "NMD_V3",
         colors: ["white", "black", "Red", "Light Blue", "orange"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12
@@ -49,7 +49,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "Forum Low",
         colors: ["Cloud White"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
         price: 110,
         outOfStock: false,
@@ -58,7 +58,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "NIZZA Platform W",
         colors: ["Cloud White", "Core Black", "Gold"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
         price: 85,
         outOfStock: false,
@@ -67,7 +67,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "NMD_R1 Refined Shoe",
         colors: ["Cloud White", "Core Black"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7],
         price: 140,
         outOfStock: false,
@@ -76,7 +76,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "NMD_R1 Refined Shoe",
         colors: ["Cloud White", "Core Black"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13
         ],
@@ -87,7 +87,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "Stan Smith Shoes",
         colors: ["Cloud White", "Core Black", "Chalk White"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12,
             12.5, 13
@@ -99,7 +99,7 @@ const AdidasSneaks: Sneaker[] = [
     {
         model: "Stan Smith Shoes",
         colors: ["Cloud White", "Core Black", "Chalk White", "Royal Blue"],
-        brand: "Nike",
+        brand: "Adidas",
         size: [
             5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12,
             12.5, 13
