@@ -230,7 +230,7 @@ header {
     position: relative;
     /*justify-content: center;*/
     /*display: flex;*/
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .sneakerIMAGE {
     width: 50%;
