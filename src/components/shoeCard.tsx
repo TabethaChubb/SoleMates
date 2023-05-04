@@ -1,5 +1,5 @@
 import React from "react";
-import { Sneaker } from "./interfaces/sneaker";
+import { Sneaker } from "../interfaces/sneaker";
 
 interface shoeCardProp {
     sneaker: Sneaker;
