@@ -5,7 +5,7 @@ interface shoeCardProp {
     sneaker: Sneaker;
 }
 
-export function shoeCard({ sneaker }: shoeCardProp): JSX.Element {
+export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
     return (
         <div>
             <div id="sneakerpage"></div>

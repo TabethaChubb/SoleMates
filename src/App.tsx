@@ -8,7 +8,7 @@ import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
-import { shoeCard } from "./components/shoeCard";
+import { ShoeCard } from "./components/ShoeCard";
 import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
 
@@ -112,9 +112,9 @@ function App(): JSX.Element {
                     </div>
                 </header>
                 <footer className="ADIDAS">
-                    <div id="adidas">
-                        <h1>ADIDAS</h1>
-                    </div>
+                    <div id="adidas"></div>
+                    <h1>ADIDAS</h1>
+                    <ShoeCard sneaker={AdidasSneaks[0]}></ShoeCard>
                     <div className="drop"></div>
                 </footer>
                 <footer className="NIKE">
