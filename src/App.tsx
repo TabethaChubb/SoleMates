@@ -8,7 +8,9 @@ import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
+import { shoeCard } from "./components/shoeCard";
 import logo from "../src/images/soleMatesLogo.jpg";
+import AdidasSneaks from "./AddiSneaks";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([
