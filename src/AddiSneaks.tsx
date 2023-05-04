@@ -2,7 +2,7 @@ import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
 const AdidasSneaks: Sneaker[] = [
     {
-        model: "Ultraboost Light Running Shoe",
+        model: "Super Liga OG Retro Sneakers",
         colors: ["Cloud white", "black", "Solar Red", "Blue", "grey"],
         brand: "Adidas",
         size: [
