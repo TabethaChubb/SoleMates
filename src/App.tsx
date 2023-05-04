@@ -1,14 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import { NavBar } from "./components/NavBar";
 import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
-import { Sneaker, role } from "./interfaces/sneaker";
-import { WishList } from "./userWishList";
+import { Sneaker } from "./interfaces/sneaker";
+import { WishList } from "./components/userWishList";
+import { shoeCard } from "./components/shoeCard";
 import logo from "../src/images/soleMatesLogo.jpg";
+import AdidasSneaks from "./AddiSneaks";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([
@@ -46,9 +48,6 @@ function App(): JSX.Element {
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
     };
-
-    const [role, setRole] = useState<role>();
-
     return (
         <div className="App">
             <head>
@@ -56,36 +55,7 @@ function App(): JSX.Element {
             </head>
 
             <body>
-                <nav>
-                    <div className="dropdown">
-                        <button className="dropbtn">Select User: {role}</button>
-                        <div className="dropdown-content">
-                            <p>
-                                <button onClick={() => setRole("Customer")}>
-                                    Customer
-                                </button>
-                            </p>
-                            <p>
-                                <button onClick={() => setRole("Employee")}>
-                                    Employee
-                                </button>
-                            </p>
-                            <p>
-                                <button onClick={() => setRole("Owner")}>
-                                    Owner
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="">Bucket?</a>
-                        </li>
-                        <li>
-                            <a href="">Bucket?</a>
-                        </li>
-                    </ul>
-                </nav>
+                <NavBar></NavBar>
                 <nav className="secondary">
                     <ul>
                         <li>
