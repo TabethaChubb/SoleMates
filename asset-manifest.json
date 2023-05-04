@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.a6d9e95f.css",
-    "main.js": "/Team7_Solemates/static/js/main.49c8bf34.js",
+    "main.js": "/Team7_Solemates/static/js/main.963487f6.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/anthony-a-JldH_vLwdYs-unsplash.jpg": "/Team7_Solemates/static/media/anthony-a-JldH_vLwdYs-unsplash.52e818cde241d9d1f42d.jpg",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
@@ -9,15 +9,14 @@
     "static/media/3.png": "/Team7_Solemates/static/media/3.670909fb82ba31a2629d.png",
     "static/media/2.png": "/Team7_Solemates/static/media/2.0244fe5ede2e55f50bf6.png",
     "static/media/soleMatesLogo.jpg": "/Team7_Solemates/static/media/soleMatesLogo.b4f84909ab6e132b25ac.jpg",
-    "static/media/R1.png": "/Team7_Solemates/static/media/R1.bc67aee2dfae36aec07d.png",
     "static/media/1.png": "/Team7_Solemates/static/media/1.9089940b8aaf6d0748fd.png",
     "index.html": "/Team7_Solemates/index.html",
     "main.a6d9e95f.css.map": "/Team7_Solemates/static/css/main.a6d9e95f.css.map",
-    "main.49c8bf34.js.map": "/Team7_Solemates/static/js/main.49c8bf34.js.map",
+    "main.963487f6.js.map": "/Team7_Solemates/static/js/main.963487f6.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6d9e95f.css",
-    "static/js/main.49c8bf34.js"
+    "static/js/main.963487f6.js"
   ]
 }
