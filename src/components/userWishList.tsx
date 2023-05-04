@@ -1,6 +1,6 @@
 import React from "react";
 import { Sneaker } from "../interfaces/sneaker";
-import { ShoeCard } from "./ShoeCard";
+import { ShoeCard } from "./Shoe_Card";
 //import { SneakerBrand } from "./interfaces/sneaker";
 
 interface WishListProp {

@@ -8,7 +8,7 @@ import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
-import { ShoeCard } from "./components/ShoeCard";
+import { ShoeCard } from "./components/Shoe_Card";
 import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
 
