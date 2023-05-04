@@ -28,14 +28,6 @@ export function NavBar(): JSX.Element {
                         </p>
                     </div>
                 </div>
-                <ul>
-                    <li>
-                        <a href="">Bucket?</a>
-                    </li>
-                    <li>
-                        <a href="">Bucket?</a>
-                    </li>
-                </ul>
             </nav>
         </div>
     );
