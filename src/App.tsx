@@ -7,23 +7,13 @@ import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
-import { WishList } from "../src/components/userWishList";
-import { ShoeCard } from "../src/components/ShoeCard";
+import { WishList } from "./components/userWishList";
+import { ShoeCard } from "./components/ShoeCard";
 import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
 
 function App(): JSX.Element {
-    const [currList, setWishList] = useState<Sneaker[]>([
-        {
-            model: "Air Max",
-            brand: "Nike",
-            size: [1, 7, 9, 10],
-            price: 120,
-            image: nikeAirMax,
-            outOfStock: false,
-            colors: ["orange", "black"]
-        }
-    ]);
+    const [currList, setWishList] = useState<Sneaker[]>(AdidasSneaks);
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
