@@ -9,7 +9,6 @@ import puma from "../src/images/3.png";
 import { Sneaker, role } from "./interfaces/sneaker";
 import { WishList } from "./userWishList";
 import logo from "../src/images/soleMatesLogo.jpg";
-import { AdiList } from "./nike";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([
