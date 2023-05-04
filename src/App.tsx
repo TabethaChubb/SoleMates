@@ -102,9 +102,9 @@ function App(): JSX.Element {
                     </div>
                 </header>
                 <footer className="ADIDAS">
-                    <div id="adidas">
-                        <h1>ADIDAS</h1>
-                    </div>
+                    <div id="adidas"></div>
+                    <h1>ADIDAS</h1>
+                    <ShoeCard sneaker={AdidasSneaks[0]}></ShoeCard>
                     <div className="drop"></div>
                 </footer>
                 <footer className="NIKE">

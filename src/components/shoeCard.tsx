@@ -12,6 +12,7 @@ export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
     ) => {
         event.dataTransfer.setData("application/json", JSON.stringify(sneaker));
     };
+
     return (
         <div>
             <div id="sneakerpage"></div>
