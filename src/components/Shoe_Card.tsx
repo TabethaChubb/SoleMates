@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Sneaker } from "../interfaces/sneaker";
 import { Form } from "react-bootstrap";
