@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import "./App.css";
@@ -11,6 +12,8 @@ import { WishList } from "./components/userWishList";
 import { ShoeCard } from "./components/Shoe_Card";
 import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
+import NikeSneaks from "./NikeSneaks";
+import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
 
 function App(): JSX.Element {
@@ -102,19 +105,29 @@ function App(): JSX.Element {
                         </div>
                     </div>
                 </header>
-                <footer className="ADIDAS">
-                    <div id="adidas"></div>
-                    <h1>ADIDAS</h1>
-                    <ShoeCard sneaker={AdidasSneaks[0]}></ShoeCard>
+                <footer id="adidas" className="ADIDAS">
+                    {AdidasSneaks.map((item, index) => (
+                        <div key={index}>
+                            <ShoeCard sneaker={item}></ShoeCard>
+                        </div>
+                    ))}
                     <div className="drop"></div>
                 </footer>
-                <footer className="NIKE">
-                    <div id="nike"></div>
-                    <h1>NIKE</h1>
+                <footer id="nike" className="NIKE">
+                    {NikeSneaks.map((item, index) => (
+                        <div key={index}>
+                            <ShoeCard sneaker={item}></ShoeCard>
+                        </div>
+                    ))}
+                    <div className="drop"></div>
                 </footer>
-                <footer className="PUMA">
-                    <div id="puma"></div>
-                    <h1>PUMA</h1>
+                <footer id="puma" className="PUMA">
+                    {PummaSneaks.map((item, index) => (
+                        <div key={index}>
+                            <ShoeCard sneaker={item}></ShoeCard>
+                        </div>
+                    ))}
+                    <div className="drop"></div>
                 </footer>
             </body>
             <footer className="WISHLIST">

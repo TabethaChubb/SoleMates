@@ -209,25 +209,42 @@ header {
 
 .ADIDAS {
     background: white;
-    height: 100vh;
+    /**height: 150vh;**/
+    display: flex;
     width: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    padding-right: 15vh;
 }
 .NIKE {
     background: black;
-    height: 100vh;
+    display: flex;
     width: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    padding-right: 15vh;
 }
 .PUMA {
     background: grey;
-    height: 100vh;
+    display: flex;
     width: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    padding-right: 15vh;
 }
 .WISHLIST {
     background: #85c1e9;
     position: relative;
+    padding-right: 15vh;
     /*justify-content: center;*/
     /*display: flex;*/
     /*height: 100vh;*/
@@ -299,6 +316,7 @@ header {
 .productcard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    /**display: flex;**/
     margin: auto;
     text-align: center;
     font-family: arial;
