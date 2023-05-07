@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
 import inventory from "./NikeSneaks";
 import AdidasSneaks from "./AddiSneaks";
