@@ -12,6 +12,7 @@ import { ShoeCard } from "./components/Shoe_Card";
 import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
 import MainInventory from "./CentralList";
+
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>(AdidasSneaks);
 
