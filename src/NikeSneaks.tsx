@@ -7,8 +7,10 @@ const NikeSneaks: Sneaker[] = [
     {
         model: "Air Force",
         colors: ["white", "black", "Red", "Light Blue", "orange"],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 90,
         outOfStock: false,
         image: R1
@@ -16,8 +18,10 @@ const NikeSneaks: Sneaker[] = [
     {
         model: " Air Max 270",
         colors: ["white", "black", "Red", "Light Blue", "orange", "purple"],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 130,
         outOfStock: false,
         image: two
@@ -34,8 +38,10 @@ const NikeSneaks: Sneaker[] = [
             "Beige",
             "yellow"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 95,
         outOfStock: false,
         image: two
@@ -50,8 +56,10 @@ const NikeSneaks: Sneaker[] = [
             "Light Blue",
             "orange"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 250,
         outOfStock: false,
         image: two
@@ -67,8 +75,10 @@ const NikeSneaks: Sneaker[] = [
             "orange",
             "Black-Metallic"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 200,
         outOfStock: false,
         image: two
@@ -83,8 +93,10 @@ const NikeSneaks: Sneaker[] = [
             "orange",
             "Green"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 210,
         outOfStock: false,
         image: two
@@ -99,8 +111,10 @@ const NikeSneaks: Sneaker[] = [
             "Orange",
             "Cool grey"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 300,
         outOfStock: false,
         image: two
@@ -115,8 +129,10 @@ const NikeSneaks: Sneaker[] = [
             "orange-White",
             "Silver"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 350,
         outOfStock: false,
         image: two
@@ -131,8 +147,10 @@ const NikeSneaks: Sneaker[] = [
             "orange",
             "Green"
         ],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 180,
         outOfStock: false,
         image: two
@@ -140,8 +158,10 @@ const NikeSneaks: Sneaker[] = [
     {
         model: "Huarache",
         colors: ["white", "black", "Phantom"],
+        selectedColor: "",
         brand: "Nike",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
         price: 250,
         outOfStock: false,
         image: two

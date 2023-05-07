@@ -7,10 +7,12 @@ export interface Sneaker {
     model: string;
     /** The list of colors that are available for a shoe */
     colors: string[];
+    selectedColor: string;
     /** The brand of Sneaker; influences when a sneaker should show up on the main list since we have the brands in different sections */
     brand: SneakerBrand;
     /** The List of available sizes for this sneaker */
     size: number[];
+    selectedSize: number;
     /** How much money this sneaker costs the user */
     price: number;
     /** Whether or not this sneaker is out of stock */

@@ -22,8 +22,8 @@ export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
                 onDragStart={(event) => handleDragStart(event, sneaker)}
             >
                 <img src={sneaker.image}></img>
-                <h1>Sneaker Name: {sneaker.model}</h1>
-                <h2>Sneaker Brand: {sneaker.brand}</h2>
+                <h3>Sneaker Name: {sneaker.model}</h3>
+                <h4>Sneaker Brand: {sneaker.brand}</h4>
                 <p className="price">price: {sneaker.price}</p>
             </div>
         </div>
