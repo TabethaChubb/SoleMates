@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
 import two from "../src/images/270.jpg";
