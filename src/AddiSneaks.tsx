@@ -1,5 +1,13 @@
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
+import Superliga from "../src/images/Superliga.png";
+import SuperStarAdv from "../src/images/SuperStarAdv.jpg";
+import Solarcontrol from "../src/images/Solarcontrol.jpg";
+import NMD_V3 from "../src/images/NMD_V3.jpg";
+import ForumLow from "../src/images/ForumLow.jpg";
+import NIZZAPlatformW from "../src/images/NIZZA Platform W.jpg";
+import NMD_R1RefinedShoe from "../src/images/NMD_R1 Refined Shoe.jpg";
+import StanSmith from "../src/images/StanSmith.jpg";
 const AdidasSneaks: Sneaker[] = [
     {
         model: "Super Liga OG Retro Sneakers",
@@ -11,7 +19,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 190,
         outOfStock: false,
-        image: R1
+        image: Superliga
     },
     {
         model: "Superstar ADV",
@@ -20,7 +28,7 @@ const AdidasSneaks: Sneaker[] = [
         size: [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         price: 100,
         outOfStock: false,
-        image: R1
+        image: SuperStarAdv
     },
     {
         model: "Solarcontrol Running Shoes",
@@ -32,7 +40,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 130,
         outOfStock: false,
-        image: R1
+        image: Solarcontrol
     },
     {
         model: "NMD_V3",
@@ -44,7 +52,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 170,
         outOfStock: false,
-        image: R1
+        image: NMD_V3
     },
     {
         model: "Forum Low",
@@ -53,7 +61,7 @@ const AdidasSneaks: Sneaker[] = [
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
         price: 110,
         outOfStock: false,
-        image: R1
+        image: ForumLow
     },
     {
         model: "NIZZA Platform W",
@@ -62,7 +70,7 @@ const AdidasSneaks: Sneaker[] = [
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
         price: 85,
         outOfStock: false,
-        image: R1
+        image: NIZZAPlatformW
     },
     {
         model: "NMD_R1 Refined Shoe",
@@ -71,7 +79,7 @@ const AdidasSneaks: Sneaker[] = [
         size: [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7],
         price: 140,
         outOfStock: false,
-        image: R1
+        image: NMD_R1RefinedShoe
     },
     {
         model: "NMD_R1 Refined Shoe",
@@ -82,7 +90,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 200,
         outOfStock: false,
-        image: R1
+        image: NMD_R1RefinedShoe
     },
     {
         model: "Stan Smith Shoes",
@@ -94,7 +102,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 100,
         outOfStock: false,
-        image: R1
+        image: StanSmith
     },
     {
         model: "Stan Smith Shoes",
@@ -106,7 +114,7 @@ const AdidasSneaks: Sneaker[] = [
         ],
         price: 110,
         outOfStock: false,
-        image: R1
+        image: StanSmith
     }
 ];
 export default AdidasSneaks;
