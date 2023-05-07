@@ -3,6 +3,7 @@ import { Sneaker } from "./interfaces/sneaker";
 import React from "react";
 import R1 from "../src/images/airf.jpg";
 import two from "../src/images/270.jpg";
+import Airmax270 from "../src/images/Airmax270.png";
 
 const inventory: Sneaker[] = [
     {
@@ -21,7 +22,7 @@ const inventory: Sneaker[] = [
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
         price: 130,
         outOfStock: false,
-        image: two
+        image: Airmax270
     },
     {
         model: " Air Max 90",
