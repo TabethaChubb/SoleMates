@@ -6,11 +6,13 @@ const PummaSneaks: Sneaker[] = [
     {
         model: "Air Force",
         colors: ["Navy-white", "black", "limestone", "Light Blue"],
+        selectedColor: "",
         brand: "Puma",
         size: [
             4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 70,
         outOfStock: false,
         image: R1
@@ -18,8 +20,10 @@ const PummaSneaks: Sneaker[] = [
     {
         model: "Contempt Demi Men's Training Shoes",
         colors: ["white", "black", "ultra-grey", "yellow", "orange"],
+        selectedColor: "",
         brand: "Puma",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
+        selectedSize: NaN,
         price: 60,
         outOfStock: false,
         image: R1
@@ -33,8 +37,10 @@ const PummaSneaks: Sneaker[] = [
             "yellow",
             "white-earth-frosted Ivory"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
+        selectedSize: NaN,
         price: 130,
         outOfStock: false,
         image: R1
@@ -46,8 +52,10 @@ const PummaSneaks: Sneaker[] = [
             "arisian-nightfrosted-ivory",
             "white-earth-frosted Ivory"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
+        selectedSize: NaN,
         price: 85,
         outOfStock: false,
         image: R1
@@ -61,8 +69,10 @@ const PummaSneaks: Sneaker[] = [
             "electric purple",
             "puma black"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5],
+        selectedSize: NaN,
         price: 160,
         outOfStock: false,
         image: R1
@@ -80,10 +90,12 @@ const PummaSneaks: Sneaker[] = [
             "lime ultra",
             "orange"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [
             7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 150,
         outOfStock: false,
         image: R1
@@ -91,11 +103,13 @@ const PummaSneaks: Sneaker[] = [
     {
         model: "PWR XX NITRO Nova Shine",
         colors: ["puma-white"],
+        selectedColor: "",
         brand: "Puma",
         size: [
             4, 4.5, 5, 5.5, 6, 6.6, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 100,
         outOfStock: false,
         image: R1
@@ -103,10 +117,12 @@ const PummaSneaks: Sneaker[] = [
     {
         model: "PUMA-180 Sneakers",
         colors: ["puma-white", "vapor-grey", "black", "grey-choclate"],
+        selectedColor: "",
         brand: "Puma",
         size: [
             7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 100,
         outOfStock: false,
         image: R1
@@ -120,11 +136,13 @@ const PummaSneaks: Sneaker[] = [
             "black",
             "grey-choclate"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [
             4, 4.5, 5, 5.5, 6, 6.6, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 80,
         outOfStock: false,
         image: R1
@@ -139,11 +157,13 @@ const PummaSneaks: Sneaker[] = [
             "gold",
             "grey-choclate"
         ],
+        selectedColor: "",
         brand: "Puma",
         size: [
             4, 4.5, 5, 5.5, 6, 6.6, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
             12, 12.5, 13, 13.5, 14
         ],
+        selectedSize: NaN,
         price: 100,
         outOfStock: false,
         image: R1
