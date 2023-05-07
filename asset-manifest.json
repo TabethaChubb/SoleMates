@@ -1,21 +1,28 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.601b15d2.css",
-    "main.js": "/Team7_Solemates/static/js/main.2b3adcd2.js",
+    "main.js": "/Team7_Solemates/static/js/main.e0be33fa.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
+    "static/media/Solarcontrol.jpg": "/Team7_Solemates/static/media/Solarcontrol.862df422f091362cfe17.jpg",
+    "static/media/SuperStarAdv.jpg": "/Team7_Solemates/static/media/SuperStarAdv.93a399fa2feba7430179.jpg",
     "static/media/brandSelectBackground.gif": "/Team7_Solemates/static/media/brandSelectBackground.1508d9b815e5d70708ef.gif",
+    "static/media/Superliga.png": "/Team7_Solemates/static/media/Superliga.fb571f018dcb86f5704f.png",
     "static/media/3.png": "/Team7_Solemates/static/media/3.670909fb82ba31a2629d.png",
     "static/media/2.png": "/Team7_Solemates/static/media/2.0244fe5ede2e55f50bf6.png",
     "static/media/soleMatesLogo.jpg": "/Team7_Solemates/static/media/soleMatesLogo.b4f84909ab6e132b25ac.jpg",
+    "static/media/NIZZA Platform W.jpg": "/Team7_Solemates/static/media/NIZZA Platform W.59a6f52fa721f3b80cad.jpg",
+    "static/media/ForumLow.jpg": "/Team7_Solemates/static/media/ForumLow.239c7e09d75b2704bdb8.jpg",
     "static/media/1.png": "/Team7_Solemates/static/media/1.9089940b8aaf6d0748fd.png",
+    "static/media/NMD_R1 Refined Shoe.jpg": "/Team7_Solemates/static/media/NMD_R1 Refined Shoe.4996c0e23b2e0920e109.jpg",
+    "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.601b15d2.css.map": "/Team7_Solemates/static/css/main.601b15d2.css.map",
-    "main.2b3adcd2.js.map": "/Team7_Solemates/static/js/main.2b3adcd2.js.map",
+    "main.e0be33fa.js.map": "/Team7_Solemates/static/js/main.e0be33fa.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.601b15d2.css",
-    "static/js/main.2b3adcd2.js"
+    "static/js/main.e0be33fa.js"
   ]
 }
