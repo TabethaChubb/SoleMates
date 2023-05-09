@@ -26,15 +26,15 @@ function App(): JSX.Element {
         setSort(selectedSort);
     };
     const sortedWishList = currList.sort((a, b) => {
-        if (sort === "brand") {
+        if (sort === "Brand") {
             return a.brand.localeCompare(b.brand);
-        } else if (sort === "model") {
+        } else if (sort === "Model Name") {
             return a.model.localeCompare(b.model);
-        } else if (sort === "price") {
+        } else if (sort === "Price") {
             return a.price - b.price;
-        } else if (sort === "selectedColor") {
+        } else if (sort === "Color") {
             return a.selectedColor.localeCompare(b.selectedColor);
-        } else if (sort === "selectedSize") {
+        } else if (sort === "Size") {
             return a.selectedSize - b.selectedSize;
         } else {
             return 0; // Default behavior: no sorting
@@ -153,6 +153,7 @@ function App(): JSX.Element {
                 </footer>
             </body>
             <footer className="WISHLIST">
+                <div className="header">Wish List</div>
                 <WishListSort
                     sneakers={currList}
                     onSortChange={handleSortChange}

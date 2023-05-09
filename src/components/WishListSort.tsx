@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import { Sneaker } from "../interfaces/sneaker";
 import { Form } from "react-bootstrap";
 
-const FILTERS = [
-    "model",
-    "brand",
-    "price",
-    "selectedColor",
-    "selectedSize",
-    "None"
-];
+const FILTERS = ["Brand", "Model Name", "Price", "Color", "Size", "None"];
 
 interface SortProp {
     sneakers: Sneaker[];
@@ -28,7 +21,7 @@ export function WishListSort({ onSortChange }: SortProp): JSX.Element {
 
     return (
         <Form.Group controlId="sortSelect">
-            <Form.Label>Wishlist Sort by:</Form.Label>
+            <Form.Label>Sort by:</Form.Label>
             <Form.Select value={currSort} onChange={updateSort}>
                 {FILTERS.map((property: string) => (
                     <option key={property} value={property}>
