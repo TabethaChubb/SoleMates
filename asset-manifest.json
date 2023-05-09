@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.3d5de393.css",
-    "main.js": "/Team7_Solemates/static/js/main.1a6a81e2.js",
+    "main.js": "/Team7_Solemates/static/js/main.c7732d67.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
     "static/media/Solarcontrol.jpg": "/Team7_Solemates/static/media/Solarcontrol.862df422f091362cfe17.jpg",
@@ -34,11 +34,11 @@
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.3d5de393.css.map": "/Team7_Solemates/static/css/main.3d5de393.css.map",
-    "main.1a6a81e2.js.map": "/Team7_Solemates/static/js/main.1a6a81e2.js.map",
+    "main.c7732d67.js.map": "/Team7_Solemates/static/js/main.c7732d67.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d5de393.css",
-    "static/js/main.1a6a81e2.js"
+    "static/js/main.c7732d67.js"
   ]
 }
