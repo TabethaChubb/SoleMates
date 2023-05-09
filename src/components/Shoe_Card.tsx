@@ -6,6 +6,11 @@ import { Form } from "react-bootstrap";
 interface shoeCardProp {
     sneaker: Sneaker;
 }
+//In order to update the list with selectedSize and selectedColor,
+//the prop has to be a list of sneakers so that an entirely new list
+//can be made with the changes of the selectedSize and color
+//and then passed back to the display. Important to have these properties
+//so they can be transfered onto wishlist correctly.
 
 export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
     const handleDragStart = (
@@ -16,13 +21,15 @@ export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
     };
     const [color, setColor] = useState<string>("");
     function updateColor(event: React.ChangeEvent<HTMLSelectElement>) {
-        setColor(event.target.value);
-        sneaker.selectedColor = color;
+        const selectedColor = event.target.value;
+        setColor(selectedColor);
+        sneaker.selectedColor = selectedColor;
     }
     const [size, setSize] = useState<number>(NaN);
     function updateSize(event: React.ChangeEvent<HTMLSelectElement>) {
-        setSize(parseInt(event.target.value));
-        sneaker.selectedSize = size;
+        const selectedSize = parseInt(event.target.value);
+        setSize(selectedSize);
+        sneaker.selectedSize = selectedSize;
     }
     return (
         <div>
