@@ -1,23 +1,29 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.49b2dbb8.css",
-    "main.js": "/Team7_Solemates/static/js/main.b1b17849.js",
+    "main.js": "/Team7_Solemates/static/js/main.30435f16.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
     "static/media/Solarcontrol.jpg": "/Team7_Solemates/static/media/Solarcontrol.862df422f091362cfe17.jpg",
     "static/media/SuperStarAdv.jpg": "/Team7_Solemates/static/media/SuperStarAdv.93a399fa2feba7430179.jpg",
+    "static/media/ForeverRUN.jpg": "/Team7_Solemates/static/media/ForeverRUN.e0722a03ce4cfc1af200.jpg",
     "static/media/brandSelectBackground.gif": "/Team7_Solemates/static/media/brandSelectBackground.1508d9b815e5d70708ef.gif",
+    "static/media/CAProClassi.jpg": "/Team7_Solemates/static/media/CAProClassi.2f73e60d8b9bf0028090.jpg",
+    "static/media/PUMA180.jpg": "/Team7_Solemates/static/media/PUMA180.da9407a6104b9807f5ab.jpg",
+    "static/media/ContemptDemi.jpg": "/Team7_Solemates/static/media/ContemptDemi.1ae9be38d60e2e1268e4.jpg",
     "static/media/Huarache.jpg": "/Team7_Solemates/static/media/Huarache.7093f1e14b9b607be795.jpg",
     "static/media/Airmax270.jpg": "/Team7_Solemates/static/media/Airmax270.e137158e7fa6198b5b56.jpg",
     "static/media/Superliga.png": "/Team7_Solemates/static/media/Superliga.fb571f018dcb86f5704f.png",
     "static/media/3.png": "/Team7_Solemates/static/media/3.670909fb82ba31a2629d.png",
     "static/media/Jordan5.jpg": "/Team7_Solemates/static/media/Jordan5.8b51e2820a7e0fcb92d5.jpg",
     "static/media/2.png": "/Team7_Solemates/static/media/2.0244fe5ede2e55f50bf6.png",
+    "static/media/PWR.jpg": "/Team7_Solemates/static/media/PWR.942a43930fde4f3742f0.jpg",
     "static/media/Vapormax.jpg": "/Team7_Solemates/static/media/Vapormax.19bd2fcafc5150fd8e66.jpg",
     "static/media/Jordantrueflight.jpg": "/Team7_Solemates/static/media/Jordantrueflight.9692f27f1a847ffa3877.jpg",
     "static/media/Jordan9.jpg": "/Team7_Solemates/static/media/Jordan9.7d7a404cafb7d50d80ce.jpg",
     "static/media/Jordan12.jpg": "/Team7_Solemates/static/media/Jordan12.e5c8917d6a3550c41a2e.jpg",
     "static/media/soleMatesLogo.jpg": "/Team7_Solemates/static/media/soleMatesLogo.b4f84909ab6e132b25ac.jpg",
+    "static/media/RiseNITRONephrite.jpg": "/Team7_Solemates/static/media/RiseNITRONephrite.deaad2bef7b80c46672c.jpg",
     "static/media/Jordan11.jpg": "/Team7_Solemates/static/media/Jordan11.96e8b3cebc3e96b29415.jpg",
     "static/media/NIZZA Platform W.jpg": "/Team7_Solemates/static/media/NIZZA Platform W.59a6f52fa721f3b80cad.jpg",
     "static/media/ForumLow.jpg": "/Team7_Solemates/static/media/ForumLow.239c7e09d75b2704bdb8.jpg",
@@ -28,11 +34,11 @@
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.49b2dbb8.css.map": "/Team7_Solemates/static/css/main.49b2dbb8.css.map",
-    "main.b1b17849.js.map": "/Team7_Solemates/static/js/main.b1b17849.js.map",
+    "main.30435f16.js.map": "/Team7_Solemates/static/js/main.30435f16.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49b2dbb8.css",
-    "static/js/main.b1b17849.js"
+    "static/js/main.30435f16.js"
   ]
 }
