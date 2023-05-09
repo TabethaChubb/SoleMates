@@ -15,9 +15,31 @@ import AdidasSneaks from "./AddiSneaks";
 import NikeSneaks from "./NikeSneaks";
 import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
+import { WishListSort } from "./components/WishListSort";
 
 function App(): JSX.Element {
-    const [currList, setWishList] = useState<Sneaker[]>(AdidasSneaks);
+    const [currList, setWishList] = useState<Sneaker[]>([]);
+    const [sort, setSort] = useState<string>("");
+
+    //UserList sort component
+    const handleSortChange = (selectedSort: string) => {
+        setSort(selectedSort);
+    };
+    const sortedWishList = currList.sort((a, b) => {
+        if (sort === "brand") {
+            return a.brand.localeCompare(b.brand);
+        } else if (sort === "model") {
+            return a.model.localeCompare(b.model);
+        } else if (sort === "price") {
+            return a.price - b.price;
+        } else if (sort === "selectedColor") {
+            return a.selectedColor.localeCompare(b.selectedColor);
+        } else if (sort === "selectedSize") {
+            return a.selectedSize - b.selectedSize;
+        } else {
+            return 0; // Default behavior: no sorting
+        }
+    });
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -131,7 +153,11 @@ function App(): JSX.Element {
                 </footer>
             </body>
             <footer className="WISHLIST">
-                <WishList sneakers={currList} />
+                <WishListSort
+                    sneakers={currList}
+                    onSortChange={handleSortChange}
+                />
+                <WishList sneakers={sortedWishList} />
             </footer>
         </div>
     );
