@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import logo from "../images/soleMatesLogo.jpg";
 
 export function NavBar(): JSX.Element {
     type role = "Customer" | "Employee" | "Owner";
@@ -27,6 +28,15 @@ export function NavBar(): JSX.Element {
                             </button>
                         </p>
                     </div>
+                </div>
+                <div>
+                    <a href="#wishlist">Go to Wish List</a>
+                </div>
+                <div>
+                    <a href="#homepage">Go to Home Page</a>
+                </div>
+                <div className="logo">
+                    <img src={logo} alt="Logo" />
                 </div>
             </nav>
         </div>

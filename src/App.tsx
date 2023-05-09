@@ -10,7 +10,6 @@ import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
 import { ShoeCard } from "./components/Shoe_Card";
-import logo from "../src/images/soleMatesLogo.jpg";
 import AdidasSneaks from "./AddiSneaks";
 import NikeSneaks from "./NikeSneaks";
 import PummaSneaks from "./Pumma";
@@ -69,7 +68,6 @@ function App(): JSX.Element {
             <head>
                 <title>Navpage mockup</title>
             </head>
-
             <body>
                 <NavBar></NavBar>
                 <nav className="secondary">
@@ -94,10 +92,7 @@ function App(): JSX.Element {
                         </li>
                     </ul>
                 </nav>
-                <div className="logo">
-                    <img src={logo} alt="Logo" />
-                </div>
-                <header>
+                <header id="homepage">
                     <div className="bg">
                         <div className="content">
                             <div className="kolom">
@@ -153,7 +148,9 @@ function App(): JSX.Element {
                 </footer>
             </body>
             <footer className="WISHLIST">
-                <div className="header">Wish List</div>
+                <div id="wishlist" className="header">
+                    Wish List
+                </div>
                 <WishListSort
                     sneakers={currList}
                     onSortChange={handleSortChange}

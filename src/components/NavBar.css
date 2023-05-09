@@ -55,7 +55,7 @@ nav ul li a {
 .dropbtn {
     background-color: #78b9e4;
     color: rgb(0, 0, 0);
-    padding: 25px;
+    padding: 22px;
     font-size: 16px;
     border: none;
     font-family: dosis;
@@ -116,4 +116,18 @@ nav ul li a {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #015160;
+}
+
+a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    height: flex;
+    padding-bottom: 5px;
 }
