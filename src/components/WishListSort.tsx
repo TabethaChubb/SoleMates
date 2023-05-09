@@ -20,7 +20,7 @@ export function WishListSort({ onSortChange }: SortProp): JSX.Element {
     }
 
     return (
-        <Form.Group controlId="sortSelect">
+        <Form.Group controlId="sortSelect" className="sortDropdown">
             <Form.Label>Sort by:</Form.Label>
             <Form.Select value={currSort} onChange={updateSort}>
                 {FILTERS.map((property: string) => (
