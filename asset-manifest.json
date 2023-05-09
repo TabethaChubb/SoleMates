@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.3d5de393.css",
-    "main.js": "/Team7_Solemates/static/js/main.c7732d67.js",
+    "main.js": "/Team7_Solemates/static/js/main.0f9a9a4a.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
+    "static/media/pumanitro.jpg": "/Team7_Solemates/static/media/pumanitro.f479036f8ff84a00f646.jpg",
     "static/media/Solarcontrol.jpg": "/Team7_Solemates/static/media/Solarcontrol.862df422f091362cfe17.jpg",
+    "static/media/pumaclyde.jpg": "/Team7_Solemates/static/media/pumaclyde.72ad359b230532e3c37f.jpg",
     "static/media/SuperStarAdv.jpg": "/Team7_Solemates/static/media/SuperStarAdv.93a399fa2feba7430179.jpg",
     "static/media/ForeverRUN.jpg": "/Team7_Solemates/static/media/ForeverRUN.e0722a03ce4cfc1af200.jpg",
     "static/media/brandSelectBackground.gif": "/Team7_Solemates/static/media/brandSelectBackground.1508d9b815e5d70708ef.gif",
@@ -30,15 +32,16 @@
     "static/media/Airmax90.jpg": "/Team7_Solemates/static/media/Airmax90.dbc036b919deb95b1e98.jpg",
     "static/media/Airforce.jpg": "/Team7_Solemates/static/media/Airforce.5135cb02cc1347b940c9.jpg",
     "static/media/1.png": "/Team7_Solemates/static/media/1.9089940b8aaf6d0748fd.png",
+    "static/media/pumaslip.jpg": "/Team7_Solemates/static/media/pumaslip.e0ea76c35f1e782a75fe.jpg",
     "static/media/NMD_R1 Refined Shoe.jpg": "/Team7_Solemates/static/media/NMD_R1 Refined Shoe.4996c0e23b2e0920e109.jpg",
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.3d5de393.css.map": "/Team7_Solemates/static/css/main.3d5de393.css.map",
-    "main.c7732d67.js.map": "/Team7_Solemates/static/js/main.c7732d67.js.map",
+    "main.0f9a9a4a.js.map": "/Team7_Solemates/static/js/main.0f9a9a4a.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d5de393.css",
-    "static/js/main.c7732d67.js"
+    "static/js/main.0f9a9a4a.js"
   ]
 }
