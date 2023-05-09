@@ -1,6 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
+import airforces from "../src/images/Airforce.jpg";
+import contemptdemi from "../src/images/ContemptDemi.jpg";
+import deviate from "../src/images/RiseNITRONephrite.jpg";
+import Slipstream from "..src/images/Slipstream.jpg";
+import Foreverrun from "..src/images/ForeverRUN.jpg";
+import Pwr from "..src/images/PWR.jpg";
+import puma180 from "..src/images/PUMA180.jpg";
+import CAProClassi from "..src/images/CAProClassi.jpg";
 
 const PummaSneaks: Sneaker[] = [
     {
@@ -15,7 +23,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 70,
         outOfStock: false,
-        image: R1
+        image: airforces
     },
     {
         model: "Contempt Demi Men's Training Shoes",
@@ -26,7 +34,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 60,
         outOfStock: false,
-        image: R1
+        image: contemptdemi
     },
     {
         model: "Rise NITRO Nephrite",
@@ -43,7 +51,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 130,
         outOfStock: false,
-        image: R1
+        image: deviate
     },
     {
         model: "Slipstream Always On Sneakers",
@@ -58,7 +66,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 85,
         outOfStock: false,
-        image: R1
+        image: Slipstream
     },
     {
         model: "Deviate NITRO 2",
@@ -75,7 +83,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 160,
         outOfStock: false,
-        image: R1
+        image: deviate
     },
 
     {
@@ -98,7 +106,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 150,
         outOfStock: false,
-        image: R1
+        image: Foreverrun
     },
     {
         model: "PWR XX NITRO Nova Shine",
@@ -112,7 +120,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 100,
         outOfStock: false,
-        image: R1
+        image: Pwr
     },
     {
         model: "PUMA-180 Sneakers",
@@ -125,7 +133,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 100,
         outOfStock: false,
-        image: R1
+        image: puma180
     },
     {
         model: "CA Pro Classi",
@@ -145,7 +153,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 80,
         outOfStock: false,
-        image: R1
+        image: CAProClassi
     },
     {
         model: "Clyde Base Sneakers",
