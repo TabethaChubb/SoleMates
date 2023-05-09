@@ -40,7 +40,7 @@ export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
                 onDragStart={(event) => handleDragStart(event, sneaker)}
             >
                 <img src={sneaker.image}></img>
-                <h3>Sneaker Name: {sneaker.model}</h3>
+                <h3>{sneaker.model}</h3>
                 <p className="price">price: ${sneaker.price}</p>
                 <Form.Group controlId="colorSelect">
                     <Form.Label>Select Color:</Form.Label>
