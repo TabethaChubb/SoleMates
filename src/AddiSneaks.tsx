@@ -9,6 +9,7 @@ import ForumLow from "../src/images/ForumLow.jpg";
 import NIZZAPlatformW from "../src/images/NIZZA Platform W.jpg";
 import NMD_R1RefinedShoe from "../src/images/NMD_R1 Refined Shoe.jpg";
 import StanSmith from "../src/images/StanSmith.jpg";
+import fo from "../src/images/fo.jpg";
 const AdidasSneaks: Sneaker[] = [
     {
         model: "Super Liga OG Retro Sneakers",
@@ -97,8 +98,8 @@ const AdidasSneaks: Sneaker[] = [
         image: NMD_R1RefinedShoe
     },
     {
-        model: "NMD_R1 Refined Shoe",
-        colors: ["Cloud White", "Core Black"],
+        model: "4DFWD",
+        colors: ["Cloud White", "Core Black", "halo silver"],
         selectedColor: "",
         brand: "Adidas",
         size: [
@@ -124,8 +125,8 @@ const AdidasSneaks: Sneaker[] = [
         image: StanSmith
     },
     {
-        model: "Stan Smith Shoes",
-        colors: ["Cloud White", "Core Black", "Chalk White", "Royal Blue"],
+        model: "Forum Midd",
+        colors: ["Cloud White", "Blue", "Brown", "Royal Blue"],
         selectedColor: "",
         brand: "Adidas",
         size: [
@@ -135,7 +136,7 @@ const AdidasSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 110,
         outOfStock: false,
-        image: StanSmith
+        image: fo
     }
 ];
 export default AdidasSneaks;

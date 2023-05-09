@@ -4,10 +4,10 @@ import R1 from "../src/images/airf.jpg";
 import airforces from "../src/images/Airforce.jpg";
 import contemptdemi from "../src/images/ContemptDemi.jpg";
 import deviate from "../src/images/RiseNITRONephrite.jpg";
-import Foreverrun from "..src/images/ForeverRUN.jpg";
-import Pwr from "..src/images/PWR.jpg";
-import puma180 from "..src/images/PUMA180.jpg";
-import CAProClassi from "..src/images/CAProClassi.jpg";
+import Foreverrun from "../src/images/ForeverRUN.jpg";
+import Pwr from "../src/images/PWR.jpg";
+import puma180 from "../src/images/PUMA180.jpg";
+import CAProClassi from "../src/images/CAProClassi.jpg";
 
 const PummaSneaks: Sneaker[] = [
     {
