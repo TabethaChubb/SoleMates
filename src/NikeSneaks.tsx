@@ -2,6 +2,16 @@
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
 import two from "../src/images/270.jpg";
+import Airforce from "../src/images/Airforce.jpg";
+import Airmax270 from "../src/images/Airmax270.jpg";
+import Airmax90 from "../src/images/Airmax90.jpg";
+import Jordan5 from "../src/images/Jordan5.jpg";
+import Jordantrueflight from "../src/images/Jordantruelight.jpg";
+import Vapormax from "../src/images/Vapormax.jpg";
+import Jordan9 from "../src/images/Jordan9.jpg";
+import Jordan11 from "../src/images/Jordan11.jpg";
+import Jordan12 from "../src/images/Jordan12.jpg";
+import Huarache from "../src/images/Huarache.jpg";
 
 const NikeSneaks: Sneaker[] = [
     {
@@ -13,7 +23,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 90,
         outOfStock: false,
-        image: R1
+        image: Airforce
     },
     {
         model: " Air Max 270",
@@ -24,7 +34,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 130,
         outOfStock: false,
-        image: two
+        image: Airmax270
     },
     {
         model: " Air Max 90",
@@ -44,7 +54,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 95,
         outOfStock: false,
-        image: two
+        image: Airmax90
     },
     {
         model: "Jordan 5",
@@ -62,7 +72,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 250,
         outOfStock: false,
-        image: two
+        image: Jordan5
     },
     {
         model: "Jordan True Flight",
@@ -81,7 +91,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 200,
         outOfStock: false,
-        image: two
+        image: Jordantrueflight
     },
     {
         model: "Vapor Max",
@@ -99,7 +109,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 210,
         outOfStock: false,
-        image: two
+        image: Vapormax
     },
     {
         model: "Jordan 9",
@@ -117,7 +127,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 300,
         outOfStock: false,
-        image: two
+        image: Jordan9
     },
     {
         model: "Jordan 11",
@@ -135,7 +145,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 350,
         outOfStock: false,
-        image: two
+        image: Jordan11
     },
     {
         model: "Jordan 12",
@@ -153,7 +163,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 180,
         outOfStock: false,
-        image: two
+        image: Jordan12
     },
     {
         model: "Huarache",
@@ -164,7 +174,7 @@ const NikeSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 250,
         outOfStock: false,
-        image: two
+        image: Huarache
     }
 ];
 export default NikeSneaks;
