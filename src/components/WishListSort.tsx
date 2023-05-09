@@ -23,6 +23,7 @@ export function WishListSort({ onSortChange }: SortProp): JSX.Element {
         <Form.Group controlId="sortSelect" className="sortDropdown">
             <Form.Label>Sort by:</Form.Label>
             <Form.Select value={currSort} onChange={updateSort}>
+                {/* eslint-disable-next-line no-extra-parens*/}
                 {FILTERS.map((property: string) => (
                     <option key={property} value={property}>
                         {property}
