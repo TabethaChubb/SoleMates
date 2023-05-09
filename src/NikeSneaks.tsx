@@ -6,7 +6,7 @@ import Airforce from "../src/images/Airforce.jpg";
 import Airmax270 from "../src/images/Airmax270.jpg";
 import Airmax90 from "../src/images/Airmax90.jpg";
 import Jordan5 from "../src/images/Jordan5.jpg";
-import Jordantrueflight from "../src/images/Jordantruelight.jpg";
+import Jordantrueflight from "../src/images/Jordantrueflight.jpg";
 import Vapormax from "../src/images/Vapormax.jpg";
 import Jordan9 from "../src/images/Jordan9.jpg";
 import Jordan11 from "../src/images/Jordan11.jpg";
