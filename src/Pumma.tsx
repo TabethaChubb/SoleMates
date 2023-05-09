@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
-import R1 from "../src/images/airf.jpg";
 import Superliga from "../src/images/Superliga.png";
 import contemptdemi from "../src/images/ContemptDemi.jpg";
 import deviate from "../src/images/RiseNITRONephrite.jpg";
@@ -8,6 +7,9 @@ import Foreverrun from "../src/images/ForeverRUN.jpg";
 import Pwr from "../src/images/PWR.jpg";
 import puma180 from "../src/images/PUMA180.jpg";
 import CAProClassi from "../src/images/CAProClassi.jpg";
+import pumaclyde from "../src/images/pumaclyde.jpg";
+import pumaslip from "../src/images/pumaslip.jpg";
+import pumanitro from "../src/images/pumanitro.jpg";
 
 const PummaSneaks: Sneaker[] = [
     {
@@ -65,7 +67,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 85,
         outOfStock: false,
-        image: R1
+        image: pumaslip
     },
     {
         model: "Deviate NITRO 2",
@@ -82,7 +84,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 160,
         outOfStock: false,
-        image: deviate
+        image: pumanitro
     },
 
     {
@@ -173,7 +175,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 100,
         outOfStock: false,
-        image: R1
+        image: pumaclyde
     }
 ];
 
