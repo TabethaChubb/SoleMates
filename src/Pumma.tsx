@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
-import airforces from "../src/images/Airforce.jpg";
+import Superliga from "../src/images/Superliga.png";
 import contemptdemi from "../src/images/ContemptDemi.jpg";
 import deviate from "../src/images/RiseNITRONephrite.jpg";
 import Foreverrun from "../src/images/ForeverRUN.jpg";
@@ -11,18 +11,18 @@ import CAProClassi from "../src/images/CAProClassi.jpg";
 
 const PummaSneaks: Sneaker[] = [
     {
-        model: "Air Force",
-        colors: ["Navy-white", "black", "limestone", "Light Blue"],
+        model: "Super Liga OG Retro Sneakers",
+        colors: ["Cloud white", "black", "Solar Red", "Blue", "grey"],
         selectedColor: "",
         brand: "Puma",
         size: [
             4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
-            12, 12.5, 13, 13.5, 14
+            12
         ],
         selectedSize: NaN,
-        price: 70,
+        price: 190,
         outOfStock: false,
-        image: airforces
+        image: Superliga
     },
     {
         model: "Contempt Demi Men's Training Shoes",
