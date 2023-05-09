@@ -4,7 +4,6 @@ import R1 from "../src/images/airf.jpg";
 import airforces from "../src/images/Airforce.jpg";
 import contemptdemi from "../src/images/ContemptDemi.jpg";
 import deviate from "../src/images/RiseNITRONephrite.jpg";
-import Slipstream from "..src/images/Slipstream.jpg";
 import Foreverrun from "..src/images/ForeverRUN.jpg";
 import Pwr from "..src/images/PWR.jpg";
 import puma180 from "..src/images/PUMA180.jpg";
@@ -66,7 +65,7 @@ const PummaSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 85,
         outOfStock: false,
-        image: Slipstream
+        image: R1
     },
     {
         model: "Deviate NITRO 2",
