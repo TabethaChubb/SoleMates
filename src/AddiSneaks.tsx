@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Sneaker } from "./interfaces/sneaker";
 import R1 from "../src/images/airf.jpg";
-import Superliga from "../src/images/Superliga.png";
 import SuperStarAdv from "../src/images/SuperStarAdv.jpg";
 import Solarcontrol from "../src/images/Solarcontrol.jpg";
 import NMD_V3 from "../src/images/NMD_V3.jpg";
@@ -11,20 +10,6 @@ import NMD_R1RefinedShoe from "../src/images/NMD_R1 Refined Shoe.jpg";
 import StanSmith from "../src/images/StanSmith.jpg";
 import fo from "../src/images/fo.jpg";
 const AdidasSneaks: Sneaker[] = [
-    {
-        model: "Super Liga OG Retro Sneakers",
-        colors: ["Cloud white", "black", "Solar Red", "Blue", "grey"],
-        selectedColor: "",
-        brand: "Adidas",
-        size: [
-            4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
-            12
-        ],
-        selectedSize: NaN,
-        price: 190,
-        outOfStock: false,
-        image: Superliga
-    },
     {
         model: "Superstar ADV",
         colors: ["white", "black", "Red", "Orange"],
