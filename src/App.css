@@ -277,8 +277,8 @@ header {
 
 .wishlistAddDrop-Zone {
     background: linear-gradient(
-        rgba(70, 108, 121, 0.5),
-        rgba(83, 128, 143, 0.7)
+        rgba(60, 255, 135, 0.877),
+        rgba(64, 148, 89, 0.7)
     );
     width: 100%;
     height: 40vh;
@@ -291,8 +291,8 @@ header {
 }
 .wishlistDeleteDrop-Zone {
     background: linear-gradient(
-        rgba(70, 108, 121, 0.5),
-        rgba(83, 128, 143, 0.7)
+        rgba(221, 92, 92, 0.863),
+        rgba(184, 69, 69, 0.7)
     );
     width: 100%;
     height: 40vh;

@@ -9,6 +9,7 @@ import NIZZAPlatformW from "../src/images/NIZZA Platform W.jpg";
 import NMD_R1RefinedShoe from "../src/images/NMD_R1 Refined Shoe.jpg";
 import StanSmith from "../src/images/StanSmith.jpg";
 import fo from "../src/images/fo.jpg";
+import DFWD from "../src/images/DFWD.jpg";
 const AdidasSneaks: Sneaker[] = [
     {
         model: "Superstar ADV",
@@ -93,7 +94,7 @@ const AdidasSneaks: Sneaker[] = [
         selectedSize: NaN,
         price: 200,
         outOfStock: false,
-        image: NMD_R1RefinedShoe
+        image: DFWD
     },
     {
         model: "Stan Smith Shoes",
