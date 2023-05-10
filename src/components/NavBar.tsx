@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import logo from "../images/soleMatesLogo.jpg";
-import { Form } from "react-bootstrap";
 
 export function NavBar(): JSX.Element {
     type role = "Customer" | "Employee" | "Owner";
