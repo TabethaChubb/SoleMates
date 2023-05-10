@@ -35,6 +35,11 @@ export function NavBar(): JSX.Element {
                 <div>
                     <a href="#homepage">Go to Home Page</a>
                 </div>
+                <div>
+                    {role === "Employee" && (
+                        <button id="editButton">Edit Shoe</button>
+                    )}
+                </div>
                 <div className="logo">
                     <img src={logo} alt="Logo" />
                 </div>
