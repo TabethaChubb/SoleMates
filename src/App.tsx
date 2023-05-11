@@ -15,8 +15,15 @@ import NikeSneaks from "./NikeSneaks";
 import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
 import { WishListSort } from "./components/WishListSort";
+import logo from "../src/images/soleMatesLogo.jpg";
 
 function App(): JSX.Element {
+    type role = "Customer" | "Employee" | "Owner";
+    const [role, setRole] = useState<role>();
+
+    const handleRoleChange = (event: React.ChangeEvent<HTMLSelectElement>) =>
+        setRole(event.target.value as role);
+
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [currCentralList, setCentralList] =
         useState<Sneaker[]>(MainInventory);
@@ -80,7 +87,38 @@ function App(): JSX.Element {
                 <title>Navpage mockup</title>
             </head>
             <body>
-                <NavBar></NavBar>
+                <nav>
+                    <div className="dropdown">
+                        <button className="dropbtn">Select User: {role}</button>
+                        <div className="dropdown-content">
+                            <select value={role} onChange={handleRoleChange}>
+                                <option value="Customer">Customer</option>
+                                <option value="Employee">Employee</option>
+                                <option value="Owner">Owner</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#wishlist">Go to Wish List</a>
+                    </div>
+                    <div>
+                        <a href="#homepage">Go to Home Page</a>
+                    </div>
+                    <div>
+                        {(role === "Employee" || role === "Owner") && (
+                            <div
+                                className="editZone"
+                                onDrop={handleAddDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                EDIT
+                            </div>
+                        )}
+                    </div>
+                    <div className="logo">
+                        <img src={logo} alt="Logo" />
+                    </div>
+                </nav>
                 <nav className="secondary">
                     <ul>
                         <li>
