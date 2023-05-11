@@ -18,7 +18,18 @@ import { WishListSort } from "./components/WishListSort";
 
 function App(): JSX.Element {
     const [currList, setWishList] = useState<Sneaker[]>([]);
+    const [currCentralList, setCentralList] =
+        useState<Sneaker[]>(MainInventory);
     const [sort, setSort] = useState<string>("");
+    const adidasList = currCentralList.filter(
+        (sneaker: Sneaker) => sneaker.brand === "Adidas"
+    );
+    const nikeList = currCentralList.filter(
+        (sneaker: Sneaker) => sneaker.brand === "Nike"
+    );
+    const pumaList = currCentralList.filter(
+        (sneaker: Sneaker) => sneaker.brand === "Puma"
+    );
 
     //UserList sort component
     const handleSortChange = (selectedSort: string) => {
@@ -123,7 +134,7 @@ function App(): JSX.Element {
                     </div>
                 </header>
                 <footer id="adidas" className="ADIDAS">
-                    {AdidasSneaks.map((item, index) => (
+                    {adidasList.map((item, index) => (
                         <div key={index}>
                             <ShoeCard sneaker={item}></ShoeCard>
                         </div>
@@ -131,7 +142,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer id="nike" className="NIKE">
-                    {NikeSneaks.map((item, index) => (
+                    {nikeList.map((item, index) => (
                         <div key={index}>
                             <ShoeCard sneaker={item}></ShoeCard>
                         </div>
@@ -139,7 +150,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer id="puma" className="PUMA">
-                    {PummaSneaks.map((item, index) => (
+                    {pumaList.map((item, index) => (
                         <div key={index}>
                             <ShoeCard sneaker={item}></ShoeCard>
                         </div>
