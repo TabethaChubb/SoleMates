@@ -15,43 +15,25 @@ import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
 import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
+import UserListChange from "./components/RoleAddDelete";
 
 function App(): JSX.Element {
-    //type role = "Customer" | "Employee" | "Owner";
     const [role, setRole] = useState<string>();
-    //--------------Updating User list-------------------------
+    const [currList, setWishList] = useState<Sneaker[]>([]);
+
+    //Updating User list
     const [roles, setUserList] = useState<string[]>([
         "Customer",
         "Employee",
         "Owner"
     ]);
-    const [userInput, setUserInput] = useState<string>("");
     const handleRoleChange = (event: React.ChangeEvent<HTMLSelectElement>) =>
         setRole(event.target.value);
-    const handleUserListChange = (
-        event: React.ChangeEvent<HTMLInputElement>
-    ) => {
-        setUserInput(event.target.value);
+    const handleUserListChange = (roles: string[]) => {
+        setUserList(roles);
     };
-    const addRole = (newRole: string) => {
-        setUserList([...roles, newRole]);
-    };
-    const deleteRole = (roleToDelete: string) => {
-        setUserList(roles.filter((role) => role !== roleToDelete));
-    };
-    const handleAddUser = () => {
-        addRole(userInput);
-        console.log("Adding user: ", userInput);
-        setUserInput("");
-    };
-    const handleDeleteUser = () => {
-        deleteRole(userInput);
-        console.log("Deleting user: ", userInput);
-        setUserInput("");
-    };
-    //-----------^^^^^Updating Role list^^^^^------------------
+    //^^^^^Updating Role list^^^^^
 
-    const [currList, setWishList] = useState<Sneaker[]>([]);
     const [currCentralList, setCentralList] =
         useState<Sneaker[]>(MainInventory);
     const [sort, setSort] = useState<string>("");
@@ -128,6 +110,12 @@ function App(): JSX.Element {
                         </div>
                     </div>
                     {role === "Owner" && (
+                        <UserListChange
+                            defaultRoles={roles}
+                            onRoleChange={handleUserListChange}
+                        ></UserListChange>
+                    )}
+                    {/* {role === "Owner" && (
                         <div>
                             <button onClick={handleAddUser}>Add User</button>
                             <button onClick={handleDeleteUser}>
@@ -140,7 +128,7 @@ function App(): JSX.Element {
                                 placeholder="Enter username"
                             />
                         </div>
-                    )}
+                    )} */}
                     <div>
                         <a href="#wishlist">Go to Wish List</a>
                     </div>
