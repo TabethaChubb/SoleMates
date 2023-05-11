@@ -19,7 +19,7 @@ import logo from "../src/images/soleMatesLogo.jpg";
 function App(): JSX.Element {
     //type role = "Customer" | "Employee" | "Owner";
     const [role, setRole] = useState<string>();
-    //Updating Role list
+    //--------------Updating User list-------------------------
     const [roles, setUserList] = useState<string[]>([
         "Customer",
         "Employee",
@@ -49,8 +49,7 @@ function App(): JSX.Element {
         console.log("Deleting user: ", userInput);
         setUserInput("");
     };
-
-    //^^^^^Updating Role list^^^^^
+    //-----------^^^^^Updating Role list^^^^^------------------
 
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [currCentralList, setCentralList] =
