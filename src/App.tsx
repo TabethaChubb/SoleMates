@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import "./App.css";
-import { NavBar } from "./components/NavBar";
 import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
@@ -16,15 +15,25 @@ import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
 import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
+import UserListChange from "./components/RoleAddDelete";
 
 function App(): JSX.Element {
-    type role = "Customer" | "Employee" | "Owner";
-    const [role, setRole] = useState<role>();
-
-    const handleRoleChange = (event: React.ChangeEvent<HTMLSelectElement>) =>
-        setRole(event.target.value as role);
-
+    const [role, setRole] = useState<string>();
     const [currList, setWishList] = useState<Sneaker[]>([]);
+
+    //Updating User list
+    const [roles, setUserList] = useState<string[]>([
+        "Customer",
+        "Employee",
+        "Owner"
+    ]);
+    const handleRoleChange = (event: React.ChangeEvent<HTMLSelectElement>) =>
+        setRole(event.target.value);
+    const handleUserListChange = (roles: string[]) => {
+        setUserList(roles);
+    };
+    //^^^^^Updating Role list^^^^^
+
     const [currCentralList, setCentralList] =
         useState<Sneaker[]>(MainInventory);
     const [sort, setSort] = useState<string>("");
@@ -92,12 +101,34 @@ function App(): JSX.Element {
                         <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
                             <select value={role} onChange={handleRoleChange}>
-                                <option value="Customer">Customer</option>
-                                <option value="Employee">Employee</option>
-                                <option value="Owner">Owner</option>
+                                {roles.map((roleOption, index) => (
+                                    <option key={index} value={roleOption}>
+                                        {roleOption}
+                                    </option>
+                                ))}
                             </select>
                         </div>
                     </div>
+                    {role === "Owner" && (
+                        <UserListChange
+                            defaultRoles={roles}
+                            onRoleChange={handleUserListChange}
+                        ></UserListChange>
+                    )}
+                    {/* {role === "Owner" && (
+                        <div>
+                            <button onClick={handleAddUser}>Add User</button>
+                            <button onClick={handleDeleteUser}>
+                                Delete User
+                            </button>
+                            <input
+                                type="text"
+                                value={userInput}
+                                onChange={handleUserListChange}
+                                placeholder="Enter username"
+                            />
+                        </div>
+                    )} */}
                     <div>
                         <a href="#wishlist">Go to Wish List</a>
                     </div>
