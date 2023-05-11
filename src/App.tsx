@@ -127,7 +127,7 @@ function App(): JSX.Element {
                                 onDrop={handleAddDrop}
                                 onDragOver={handleDragOver}
                             >
-                                Drop Shoe to ADD to Wishlist ⭐
+                                ⭐ 🛒
                             </div>
                         </li>
                         <li>
@@ -136,7 +136,7 @@ function App(): JSX.Element {
                                 onDrop={handleDeleteDrop}
                                 onDragOver={handleDragOver}
                             >
-                                Drop Shoe to DELETE from Wishlist ⭐
+                                ❌ 🗑️
                             </div>
                         </li>
                     </ul>
