@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import "./App.css";
-import { NavBar } from "./components/NavBar";
 import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
@@ -18,11 +17,40 @@ import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
 
 function App(): JSX.Element {
-    type role = "Customer" | "Employee" | "Owner";
-    const [role, setRole] = useState<role>();
-
+    //type role = "Customer" | "Employee" | "Owner";
+    const [role, setRole] = useState<string>();
+    //Updating Role list
+    const [roles, setUserList] = useState<string[]>([
+        "Customer",
+        "Employee",
+        "Owner"
+    ]);
+    const [userInput, setUserInput] = useState<string>("");
     const handleRoleChange = (event: React.ChangeEvent<HTMLSelectElement>) =>
-        setRole(event.target.value as role);
+        setRole(event.target.value);
+    const handleUserListChange = (
+        event: React.ChangeEvent<HTMLInputElement>
+    ) => {
+        setUserInput(event.target.value);
+    };
+    const addRole = (newRole: string) => {
+        setUserList([...roles, newRole]);
+    };
+    const deleteRole = (roleToDelete: string) => {
+        setUserList(roles.filter((role) => role !== roleToDelete));
+    };
+    const handleAddUser = () => {
+        addRole(userInput);
+        console.log("Adding user: ", userInput);
+        setUserInput("");
+    };
+    const handleDeleteUser = () => {
+        deleteRole(userInput);
+        console.log("Deleting user: ", userInput);
+        setUserInput("");
+    };
+
+    //^^^^^Updating Role list^^^^^
 
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [currCentralList, setCentralList] =
@@ -92,12 +120,28 @@ function App(): JSX.Element {
                         <button className="dropbtn">Select User: {role}</button>
                         <div className="dropdown-content">
                             <select value={role} onChange={handleRoleChange}>
-                                <option value="Customer">Customer</option>
-                                <option value="Employee">Employee</option>
-                                <option value="Owner">Owner</option>
+                                {roles.map((roleOption, index) => (
+                                    <option key={index} value={roleOption}>
+                                        {roleOption}
+                                    </option>
+                                ))}
                             </select>
                         </div>
                     </div>
+                    {role === "Owner" && (
+                        <div>
+                            <button onClick={handleAddUser}>Add User</button>
+                            <button onClick={handleDeleteUser}>
+                                Delete User
+                            </button>
+                            <input
+                                type="text"
+                                value={userInput}
+                                onChange={handleUserListChange}
+                                placeholder="Enter username"
+                            />
+                        </div>
+                    )}
                     <div>
                         <a href="#wishlist">Go to Wish List</a>
                     </div>

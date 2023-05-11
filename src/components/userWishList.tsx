@@ -10,10 +10,10 @@ interface WishListProp {
 export function WishList({ sneakers }: WishListProp): JSX.Element {
     return (
         <div className="sneaker-grid">
-            {sneakers.map((sneakers) => {
+            {sneakers.map((sneaker) => {
                 return (
-                    <div key={sneakers.model}>
-                        <ShoeCard sneaker={sneakers}></ShoeCard>
+                    <div key={sneaker.model}>
+                        <ShoeCard sneaker={sneaker}></ShoeCard>
                     </div>
                     // <div
                     //     key={sneaker.model}
