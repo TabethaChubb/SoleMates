@@ -2,16 +2,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import "./App.css";
-import nikeAirMax from "../src/images/anthony-a-JldH_vLwdYs-unsplash.jpg";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
 import { Sneaker } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
 import { ShoeCard } from "./components/Shoe_Card";
-import AdidasSneaks from "./AddiSneaks";
-import NikeSneaks from "./NikeSneaks";
-import PummaSneaks from "./Pumma";
 import MainInventory from "./CentralList";
 import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
@@ -32,8 +28,8 @@ function App(): JSX.Element {
     const handleUserListChange = (roles: string[]) => {
         setUserList(roles);
     };
-    //^^^^^Updating Role list^^^^^
 
+    //Making sneaker lists into states
     const [currCentralList, setCentralList] =
         useState<Sneaker[]>(MainInventory);
     const [sort, setSort] = useState<string>("");
@@ -63,7 +59,7 @@ function App(): JSX.Element {
         } else if (sort === "Size") {
             return a.selectedSize - b.selectedSize;
         } else {
-            return 0; // Default behavior: no sorting
+            return 0; // no sorting
         }
     });
 
@@ -115,20 +111,6 @@ function App(): JSX.Element {
                             onRoleChange={handleUserListChange}
                         ></UserListChange>
                     )}
-                    {/* {role === "Owner" && (
-                        <div>
-                            <button onClick={handleAddUser}>Add User</button>
-                            <button onClick={handleDeleteUser}>
-                                Delete User
-                            </button>
-                            <input
-                                type="text"
-                                value={userInput}
-                                onChange={handleUserListChange}
-                                placeholder="Enter username"
-                            />
-                        </div>
-                    )} */}
                     <div>
                         <a href="#wishlist">Go to Wish List</a>
                     </div>
