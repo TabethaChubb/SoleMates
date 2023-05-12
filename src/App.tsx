@@ -12,10 +12,13 @@ import MainInventory from "./CentralList";
 import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
 import UserListChange from "./components/RoleAddDelete";
+import { Button, Form } from "react-bootstrap";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>();
     const [currList, setWishList] = useState<Sneaker[]>([]);
+    const [editList, setEditList] = useState<boolean>(true);
+    const [available, setAvailable] = useState<boolean>(true);
 
     //Updating User list
     const [roles, setUserList] = useState<string[]>([
@@ -62,6 +65,33 @@ function App(): JSX.Element {
             return 0; // no sorting
         }
     });
+    //Checks if you can put shoe in edit list (max 1) adds if able
+    const handleEditDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        const droppedSneaker = JSON.parse(
+            event.dataTransfer.getData("application/json")
+        ) as Sneaker;
+        currList.length < 1 ? setEditList(true) : setEditList(false);
+        editList ? setWishList([droppedSneaker]) : setWishList([...currList]);
+    };
+
+    //sets shoes current changes
+    function updateAvailability(event: React.ChangeEvent<HTMLInputElement>) {
+        setAvailable(event.target.checked);
+        currList[0].outOfStock = available;
+        setCentralList(
+            currCentralList.map(
+                (shoe: Sneaker): Sneaker =>
+                    shoe.model == currList[0].model
+                        ? { ...shoe, outOfStock: !shoe.outOfStock }
+                        : { ...shoe }
+            )
+        );
+    }
+    //reset list
+    function emptyList() {
+        setWishList([]);
+    }
 
     //Adds sneakers to user wishlist
     const handleAddDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -121,10 +151,21 @@ function App(): JSX.Element {
                         {(role === "Employee" || role === "Owner") && (
                             <div
                                 className="editZone"
-                                onDrop={handleAddDrop}
+                                onDrop={handleEditDrop}
                                 onDragOver={handleDragOver}
                             >
                                 EDIT
+                            </div>
+                        )}
+                    </div>
+                    <div>
+                        {role === "Owner" && (
+                            <div
+                                className="deleteZone"
+                                onDrop={handleAddDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                Delete
                             </div>
                         )}
                     </div>
@@ -218,6 +259,22 @@ function App(): JSX.Element {
                     onSortChange={handleSortChange}
                 />
                 <WishList sneakers={sortedWishList} />
+                <div>
+                    {(role === "Owner" || role === "Employee") && (
+                        <Form.Check
+                            type="switch"
+                            id="is-available"
+                            label="In stock"
+                            checked={available}
+                            onChange={updateAvailability}
+                        />
+                    )}
+                </div>
+                <div>
+                    {(role === "Owner" || role === "Employee") && (
+                        <Button onClick={emptyList}>Finish</Button>
+                    )}
+                </div>
             </footer>
         </div>
     );
