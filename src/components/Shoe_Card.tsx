@@ -42,6 +42,7 @@ export function ShoeCard({ sneaker }: shoeCardProp): JSX.Element {
                 <img src={sneaker.image}></img>
                 <h3>{sneaker.model}</h3>
                 <p className="price">price: ${sneaker.price}</p>
+                <p>out of stock: {sneaker.outOfStock.toString()}</p>
                 <Form.Group controlId="colorSelect">
                     <Form.Label>Select Color:</Form.Label>
                     <Form.Select value={color} onChange={updateColor}>
