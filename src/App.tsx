@@ -74,6 +74,18 @@ function App(): JSX.Element {
         currList.length < 1 ? setEditList(true) : setEditList(false);
         editList ? setWishList([droppedSneaker]) : setWishList([...currList]);
     };
+    //deletes shoes off the main list
+    const deleteOffMainListevent = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        const droppedSneaker = JSON.parse(
+            event.dataTransfer.getData("application/json")
+        ) as Sneaker;
+        setCentralList(
+            currCentralList.filter(
+                (shoe: Sneaker): boolean => shoe.model !== droppedSneaker.model
+            )
+        );
+    };
 
     //sets shoes current changes
     function updateAvailability(event: React.ChangeEvent<HTMLInputElement>) {
@@ -162,7 +174,7 @@ function App(): JSX.Element {
                         {role === "Owner" && (
                             <div
                                 className="deleteZone"
-                                onDrop={handleAddDrop}
+                                onDrop={deleteOffMainListevent}
                                 onDragOver={handleDragOver}
                             >
                                 Delete
