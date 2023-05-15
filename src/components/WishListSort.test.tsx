@@ -17,3 +17,9 @@ test("updates sort option and triggers callback on selection", () => {
     expect(dropdown).toHaveValue("Brand");
     expect(mockOnSortChange).toHaveBeenCalledWith("Brand");
 });
+
+test("renders correct number of sorting options", () => {
+    render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
+    const options = screen.getAllByRole("option");
+    expect(options).toHaveLength(6); // Including the "None" option
+});
