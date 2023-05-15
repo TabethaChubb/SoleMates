@@ -28,7 +28,7 @@ describe("ShoeCard", () => {
         expect(getByLabelText("Select Color:")).toBeInTheDocument();
         expect(getByLabelText("Select Size:")).toBeInTheDocument();
     });
-    /**
+
     test("updates the selected color", () => {
         const { getByLabelText } = render(<ShoeCard sneaker={Sneaker} />);
 
@@ -39,7 +39,7 @@ describe("ShoeCard", () => {
         // Check if the color is updated in the component's state
         expect(Sneaker.selectedColor).toBe("Red");
     });
-
+    /**
     test("updates the selected size", () => {
         const { getByLabelText } = render(<ShoeCard sneaker={Sneaker} />);
 
