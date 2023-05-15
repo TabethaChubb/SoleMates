@@ -8,3 +8,12 @@ test("renders dropdown menu with initial 'None' value", () => {
     const dropdown = screen.getByLabelText("Sort by:");
     expect(dropdown).toHaveValue("None");
 });
+
+test("updates sort option and triggers callback on selection", () => {
+    const mockOnSortChange = jest.fn();
+    render(<WishListSort onSortChange={mockOnSortChange} sneakers={[]} />);
+    const dropdown = screen.getByLabelText("Sort by:");
+    fireEvent.change(dropdown, { target: { value: "Brand" } });
+    expect(dropdown).toHaveValue("Brand");
+    expect(mockOnSortChange).toHaveBeenCalledWith("Brand");
+});
