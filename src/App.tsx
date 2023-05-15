@@ -16,7 +16,7 @@ import { Button, Form } from "react-bootstrap";
 import { ShoeForm, NewShoe } from "./components/AddShoe";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>();
+    const [role, setRole] = useState<string>("Customer");
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [editList, setEditList] = useState<boolean>(true);
     const [available, setAvailable] = useState<boolean>(true);
