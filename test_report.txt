@@ -53,7 +53,7 @@ PASS src/components/WishListSort.test.tsx
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   14.58 |        0 |   16.94 |   14.68 |                   
+All files           |   14.28 |        0 |   16.66 |   14.38 |                   
  src                |       0 |        0 |       0 |       0 |                   
   AddiSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   App.tsx           |       0 |        0 |       0 |       0 | 19-306            
@@ -61,8 +61,8 @@ All files           |   14.58 |        0 |   16.94 |   14.68 |
   NikeSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   Pumma.tsx         |       0 |      100 |       0 |       0 | 5-6               
   nike.tsx          |       0 |      100 |       0 |       0 | 8-189             
- src/components     |   35.59 |      100 |   38.46 |    36.2 |                   
-  AddShoe.tsx       |       0 |      100 |       0 |       0 | 18-85             
+ src/components     |   33.87 |      100 |   37.03 |   34.42 |                   
+  AddShoe.tsx       |       0 |      100 |       0 |       0 | 19-96             
   RoleAddDelete.tsx |       0 |      100 |       0 |       0 | 12-40             
   Shoe_Card.tsx     |   85.71 |      100 |   71.42 |   85.71 | 20,40             
   WishListSort.tsx  |     100 |      100 |     100 |     100 |                   
@@ -74,5 +74,5 @@ All files           |   14.58 |        0 |   16.94 |   14.68 |
 Test Suites: 3 passed, 3 total
 Tests:       15 passed, 15 total
 Snapshots:   0 total
-Time:        3.901 s
+Time:        5.29 s
 Ran all test suites.

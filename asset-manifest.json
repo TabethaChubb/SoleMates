@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.34529635.css",
-    "main.js": "/Team7_Solemates/static/js/main.b7a1d5e4.js",
+    "main.js": "/Team7_Solemates/static/js/main.e1da8c84.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
     "static/media/pumanitro.jpg": "/Team7_Solemates/static/media/pumanitro.f479036f8ff84a00f646.jpg",
@@ -37,11 +37,11 @@
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.34529635.css.map": "/Team7_Solemates/static/css/main.34529635.css.map",
-    "main.b7a1d5e4.js.map": "/Team7_Solemates/static/js/main.b7a1d5e4.js.map",
+    "main.e1da8c84.js.map": "/Team7_Solemates/static/js/main.e1da8c84.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34529635.css",
-    "static/js/main.b7a1d5e4.js"
+    "static/js/main.e1da8c84.js"
   ]
 }
