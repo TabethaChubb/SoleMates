@@ -43,6 +43,12 @@ nav ul li a {
     color: #000;
 }
 
+.jumpToWishOrEdit {
+    justify-self: center;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
 .secondary {
     height: 100%;
     width: 15vh;

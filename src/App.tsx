@@ -185,8 +185,13 @@ function App(): JSX.Element {
                             Add New Shoe <br /> to Inventory
                         </button>
                     )}
-                    <div>
-                        <a href="#wishlist">Go to Wish List</a>
+                    <div className="jumpToWishOrEdit">
+                        <a href="#wishlist">
+                            {role === "Customer" && <div>Go to Wish List</div>}
+                            {(role === "Owner" || role === "Employee") && (
+                                <div>Go to Edit Area</div>
+                            )}
+                        </a>
                     </div>
                     <div>
                         <a href="#homepage">Go to Home Page</a>
@@ -312,7 +317,10 @@ function App(): JSX.Element {
             </body>
             <footer className="WISHLIST">
                 <div id="wishlist" className="header">
-                    Wish List
+                    {role === "Customer" && <div>Wish List</div>}
+                    {(role === "Employee" || role === "Owner") && (
+                        <div>Edit Area</div>
+                    )}
                 </div>
                 <WishListSort
                     sneakers={currList}
