@@ -44,4 +44,26 @@ describe("WishList", () => {
         expect(container.firstChild).toBeInTheDocument();
         expect(container.firstChild.childNodes.length).toBe(sneakers.length);
     });
+
+    test("each ShoeCard component receives correct sneaker prop", () => {
+        const { container } = render(<WishList sneakers={sneakers} />);
+        const shoeCards = container.querySelectorAll(".shoe-card");
+
+        shoeCards.forEach((shoeCard, index) => {
+            const sneakerProp = shoeCard.getAttribute("data-sneaker");
+            const sneaker = JSON.parse(sneakerProp);
+            expect(sneaker).toEqual(sneakers[index]);
+        });
+    });
+
+    test("each ShoeCard component has a unique key prop", () => {
+        const { container } = render(<WishList sneakers={sneakers} />);
+        const shoeCards = container.querySelectorAll(".shoe-card");
+
+        const keys = Array.from(shoeCards).map((shoeCard) =>
+            shoeCard.getAttribute("data-key")
+        );
+
+        expect(new Set(keys).size).toBe(keys.length);
+    });
 });
