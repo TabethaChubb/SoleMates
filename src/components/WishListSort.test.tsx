@@ -23,3 +23,17 @@ test("renders correct number of sorting options", () => {
     const options = screen.getAllByRole("option");
     expect(options).toHaveLength(6); // Including the "None" option
 });
+
+test("renders correct sorting options", () => {
+    render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
+    const options = screen.getAllByRole("option");
+    const optionValues = options.map((option) => option.textContent);
+    expect(optionValues).toEqual([
+        "Brand",
+        "Model Name",
+        "Price",
+        "Color",
+        "Size",
+        "None"
+    ]);
+});
