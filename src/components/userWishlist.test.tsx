@@ -3,6 +3,7 @@ import { render } from "@testing-library/react";
 import { WishList } from "./userWishList";
 import airmax from "../images/Airmax270.jpg";
 import SuperStarAdv from "../images/SuperStarAdv.jpg";
+import { Sneaker } from "../interfaces/sneaker";
 
 describe("WishList", () => {
     type SneakerBrand = "Nike" | "Puma" | "Adidas";
@@ -30,6 +31,14 @@ describe("WishList", () => {
             image: SuperStarAdv
         }
     ];
+
+    test("renders empty WishList", () => {
+        const sneakerList: Sneaker[] = [];
+        const { container } = render(<WishList sneakers={sneakerList} />);
+        expect(container.firstChild).toBeInTheDocument();
+        expect(container.firstChild.childNodes.length).toBe(0);
+    });
+
     test("renders WishList with sneakers", () => {
         const { container } = render(<WishList sneakers={sneakers} />);
         expect(container.firstChild).toBeInTheDocument();
