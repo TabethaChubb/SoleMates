@@ -37,3 +37,10 @@ test("renders correct sorting options", () => {
         "None"
     ]);
 });
+
+test("updates local state on selection", () => {
+    render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
+    const dropdown = screen.getByLabelText("Sort by:");
+    fireEvent.change(dropdown, { target: { value: "Price" } });
+    expect(dropdown).toHaveValue("Price");
+});
