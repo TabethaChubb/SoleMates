@@ -134,7 +134,7 @@ function App(): JSX.Element {
     const [showForm, setShowForm] = useState(false); // State to control the form visibility
 
     const handleAddShoe = (newShoe: NewShoe) => {
-        const { model, brand, price, colors, sizes } = newShoe;
+        const { model, brand, image, price, colors, sizes } = newShoe;
 
         const sneaker: Sneaker = {
             model,
@@ -145,7 +145,7 @@ function App(): JSX.Element {
             selectedColor: "",
             selectedSize: NaN,
             outOfStock: false,
-            image: ""
+            image: image
         };
 
         setCentralList([...currCentralList, sneaker]);
