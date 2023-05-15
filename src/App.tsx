@@ -5,7 +5,7 @@ import "./App.css";
 import adidas from "../src/images/1.png";
 import nike from "../src/images/2.png";
 import puma from "../src/images/3.png";
-import { Sneaker } from "./interfaces/sneaker";
+import { Sneaker, SneakerBrand } from "./interfaces/sneaker";
 import { WishList } from "./components/userWishList";
 import { ShoeCard } from "./components/Shoe_Card";
 import MainInventory from "./CentralList";
@@ -13,6 +13,7 @@ import { WishListSort } from "./components/WishListSort";
 import logo from "../src/images/soleMatesLogo.jpg";
 import UserListChange from "./components/RoleAddDelete";
 import { Button, Form } from "react-bootstrap";
+import { ShoeForm, NewShoe } from "./components/AddShoe";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>();
@@ -20,7 +21,7 @@ function App(): JSX.Element {
     const [editList, setEditList] = useState<boolean>(true);
     const [available, setAvailable] = useState<boolean>(true);
 
-    //Updating User list
+    //Updating list of Users
     const [roles, setUserList] = useState<string[]>([
         "Customer",
         "Employee",
@@ -128,6 +129,28 @@ function App(): JSX.Element {
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
     };
+
+    //Adds a new sneaker to inventory list
+    const [showForm, setShowForm] = useState(false); // State to control the form visibility
+
+    const handleAddShoe = (newShoe: NewShoe) => {
+        const { model, brand, price, colors, sizes } = newShoe;
+
+        const sneaker: Sneaker = {
+            model,
+            brand: brand as SneakerBrand,
+            price: parseInt(price),
+            colors: colors.split(",").map((color) => color.trim()),
+            size: sizes.split(",").map((size) => Number(size.trim())),
+            selectedColor: "",
+            selectedSize: NaN,
+            outOfStock: false,
+            image: ""
+        };
+
+        setCentralList([...currCentralList, sneaker]);
+        setShowForm(false);
+    };
     return (
         <div className="App">
             <head>
@@ -152,6 +175,15 @@ function App(): JSX.Element {
                             defaultRoles={roles}
                             onRoleChange={handleUserListChange}
                         ></UserListChange>
+                    )}
+                    <div className="spacer"></div>
+                    {role === "Owner" && (
+                        <button
+                            onClick={() => setShowForm(true)}
+                            className="inventory-add-button"
+                        >
+                            Add New Shoe <br /> to Inventory
+                        </button>
                     )}
                     <div>
                         <a href="#wishlist">Go to Wish List</a>
@@ -237,6 +269,13 @@ function App(): JSX.Element {
                         </div>
                     </div>
                 </header>
+                {showForm && (
+                    <div className="overlay">
+                        <div className="add-shoe-form">
+                            {showForm && <ShoeForm onAddShoe={handleAddShoe} />}
+                        </div>
+                    </div>
+                )}
                 <footer>
                     <div id="adidas">ADIDAS</div>
                 </footer>
