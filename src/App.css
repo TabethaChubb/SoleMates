@@ -14,6 +14,10 @@ body {
     font-family: dosis;
 }
 
+.spacer {
+    margin-left: 10px; /* Adjust the value as needed */
+}
+
 nav {
     background: linear-gradient(
         rgba(70, 108, 121, 0.5),
@@ -512,7 +516,6 @@ a {
     border-radius: 4px;
 }
 
-/* Submit button */
 .add-shoe-form button[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -527,13 +530,16 @@ a {
     background-color: #45a049;
 }
 
-/* Optional: Add a background overlay */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999; /* Ensure it appears on top of other elements */
+}
+.inventory-add-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(227, 243, 251);
 }

@@ -176,9 +176,13 @@ function App(): JSX.Element {
                             onRoleChange={handleUserListChange}
                         ></UserListChange>
                     )}
+                    <div className="spacer"></div>
                     {role === "Owner" && (
-                        <button onClick={() => setShowForm(true)}>
-                            Add a New Shoe
+                        <button
+                            onClick={() => setShowForm(true)}
+                            className="inventory-add-button"
+                        >
+                            Add New Shoe <br /> to Inventory
                         </button>
                     )}
                     <div>
