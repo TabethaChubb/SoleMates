@@ -39,7 +39,7 @@ describe("ShoeCard", () => {
         // Check if the color is updated in the component's state
         expect(Sneaker.selectedColor).toBe("Red");
     });
-    /**
+
     test("updates the selected size", () => {
         const { getByLabelText } = render(<ShoeCard sneaker={Sneaker} />);
 
@@ -50,7 +50,7 @@ describe("ShoeCard", () => {
         // Check if the size is updated in the component's state
         expect(Sneaker.selectedSize).toBe(9);
     });
-
+    /**
     test("displays the correct price format", () => {
         const { getByText } = render(<ShoeCard sneaker={Sneaker} />);
 
