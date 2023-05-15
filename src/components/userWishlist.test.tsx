@@ -66,4 +66,13 @@ describe("WishList", () => {
 
         expect(new Set(keys).size).toBe(keys.length);
     });
+
+    test("displays correct Sneaker model in ShoeCard", () => {
+        const { getByText } = render(<WishList sneakers={sneakers} />);
+
+        sneakers.forEach((sneaker) => {
+            const sneakerModel = getByText(sneaker.model);
+            expect(sneakerModel).toBeInTheDocument();
+        });
+    });
 });
