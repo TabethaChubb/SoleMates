@@ -205,6 +205,15 @@ header {
 /** FOOTER **/
 /**CAN BE USED AS THE SNEAKER PAGES **/
 
+footer {
+    bottom: 0;
+    min-height: 45px;
+    font-family: verdana;
+    background: rgb(172, 172, 228);
+    bottom: 0;
+    list-style: none;
+}
+
 .ADIDAS {
     background: #85c1e9;
     display: flex;
