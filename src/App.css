@@ -211,6 +211,15 @@ header {
 /** FOOTER **/
 /**CAN BE USED AS THE SNEAKER PAGES **/
 
+.adidasHead {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    position: relative;
+}
 .ADIDAS {
     background: #85c1e9;
     display: flex;
