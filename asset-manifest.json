@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Team7_Solemates/static/css/main.98f4eb1a.css",
-    "main.js": "/Team7_Solemates/static/js/main.08a4e66b.js",
+    "main.js": "/Team7_Solemates/static/js/main.9d6c02d4.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
     "static/media/pumanitro.jpg": "/Team7_Solemates/static/media/pumanitro.f479036f8ff84a00f646.jpg",
     "static/media/Solarcontrol.jpg": "/Team7_Solemates/static/media/Solarcontrol.862df422f091362cfe17.jpg",
     "static/media/pumaclyde.jpg": "/Team7_Solemates/static/media/pumaclyde.72ad359b230532e3c37f.jpg",
     "static/media/SuperStarAdv.jpg": "/Team7_Solemates/static/media/SuperStarAdv.93a399fa2feba7430179.jpg",
+    "static/media/gts.jpg": "/Team7_Solemates/static/media/gts.e1c404a542446d8d0605.jpg",
     "static/media/ForeverRUN.jpg": "/Team7_Solemates/static/media/ForeverRUN.e0722a03ce4cfc1af200.jpg",
     "static/media/brandSelectBackground.gif": "/Team7_Solemates/static/media/brandSelectBackground.1508d9b815e5d70708ef.gif",
     "static/media/CAProClassi.jpg": "/Team7_Solemates/static/media/CAProClassi.2f73e60d8b9bf0028090.jpg",
@@ -37,11 +38,11 @@
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
     "main.98f4eb1a.css.map": "/Team7_Solemates/static/css/main.98f4eb1a.css.map",
-    "main.08a4e66b.js.map": "/Team7_Solemates/static/js/main.08a4e66b.js.map",
+    "main.9d6c02d4.js.map": "/Team7_Solemates/static/js/main.9d6c02d4.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98f4eb1a.css",
-    "static/js/main.08a4e66b.js"
+    "static/js/main.9d6c02d4.js"
   ]
 }
