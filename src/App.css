@@ -43,6 +43,12 @@ nav ul li a {
     color: #000;
 }
 
+.jumpToWishOrEdit {
+    justify-self: center;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
 .secondary {
     height: 100%;
     width: 15vh;
@@ -205,15 +211,6 @@ header {
 /** FOOTER **/
 /**CAN BE USED AS THE SNEAKER PAGES **/
 
-footer {
-    bottom: 0;
-    min-height: 45px;
-    font-family: verdana;
-    background: rgb(172, 172, 228);
-    bottom: 0;
-    list-style: none;
-}
-
 .ADIDAS {
     background: #85c1e9;
     display: flex;
@@ -225,6 +222,15 @@ footer {
     padding: 10px;
     padding-right: 15vh;
 }
+.nikeHead {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    position: relative;
+}
 .NIKE {
     background: #85c1e9;
     display: flex;
@@ -235,6 +241,16 @@ footer {
     grid-gap: 20px;
     padding: 10px;
     padding-right: 15vh;
+}
+
+.pumaHead {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    position: relative;
 }
 .PUMA {
     background: #85c1e9;

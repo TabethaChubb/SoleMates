@@ -9,6 +9,7 @@ interface ShoeFormProps {
 export interface NewShoe {
     model: string;
     brand: string;
+    image: string;
     price: string;
     colors: string;
     sizes: string;
@@ -17,7 +18,7 @@ export interface NewShoe {
 export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
     const [model, setModel] = useState("");
     const [brand, setBrand] = useState("");
-
+    const [image, setImage] = useState("");
     const [price, setPrice] = useState("");
     const [colors, setColors] = useState("");
     const [sizes, setSizes] = useState("");
@@ -28,6 +29,7 @@ export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
         const newShoe: NewShoe = {
             model,
             brand,
+            image,
             price,
             colors,
             sizes
@@ -37,6 +39,7 @@ export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
 
         setModel("");
         setPrice("");
+        setImage("");
         setColors("");
         setSizes("");
     };
@@ -59,6 +62,14 @@ export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
                         type="text"
                         value={brand}
                         onChange={(event) => setBrand(event.target.value)}
+                    />
+                </Form.Group>
+                <Form.Group controlId="imagelInput">
+                    <Form.Label>Image URL:</Form.Label>
+                    <Form.Control
+                        type="text"
+                        value={image}
+                        onChange={(event) => setImage(event.target.value)}
                     />
                 </Form.Group>
                 <Form.Group controlId="priceInput">

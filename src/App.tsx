@@ -16,7 +16,7 @@ import { Button, Form } from "react-bootstrap";
 import { ShoeForm, NewShoe } from "./components/AddShoe";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>();
+    const [role, setRole] = useState<string>("Customer");
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [editList, setEditList] = useState<boolean>(true);
     const [available, setAvailable] = useState<boolean>(true);
@@ -134,7 +134,7 @@ function App(): JSX.Element {
     const [showForm, setShowForm] = useState(false); // State to control the form visibility
 
     const handleAddShoe = (newShoe: NewShoe) => {
-        const { model, brand, price, colors, sizes } = newShoe;
+        const { model, brand, image, price, colors, sizes } = newShoe;
 
         const sneaker: Sneaker = {
             model,
@@ -145,7 +145,7 @@ function App(): JSX.Element {
             selectedColor: "",
             selectedSize: NaN,
             outOfStock: false,
-            image: ""
+            image: image
         };
 
         setCentralList([...currCentralList, sneaker]);
@@ -185,8 +185,13 @@ function App(): JSX.Element {
                             Add New Shoe <br /> to Inventory
                         </button>
                     )}
-                    <div>
-                        <a href="#wishlist">Go to Wish List</a>
+                    <div className="jumpToWishOrEdit">
+                        <a href="#wishlist">
+                            {role === "Customer" && <div>Go to Wish List</div>}
+                            {(role === "Owner" || role === "Employee") && (
+                                <div>Go to Edit Area</div>
+                            )}
+                        </a>
                     </div>
                     <div>
                         <a href="#homepage">Go to Home Page</a>
@@ -277,9 +282,9 @@ function App(): JSX.Element {
                     </div>
                 )}
                 <footer>
-                    <div id="adidas">ADIDAS</div>
+                    <div className="adidasHead">ADIDAS</div>
                 </footer>
-                <footer className="ADIDAS">
+                <footer id="adidas" className="ADIDAS">
                     {adidasList.map((item, index) => (
                         <div key={index}>
                             <ShoeCard sneaker={item}></ShoeCard>
@@ -288,7 +293,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer>
-                    <div id="nike">NIKE</div>
+                    <div className="nikeHead">NIKE</div>
                 </footer>
                 <footer id="nike" className="NIKE">
                     {nikeList.map((item, index) => (
@@ -299,7 +304,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer>
-                    <div id="puma">PUMA</div>
+                    <div className="pumaHead">PUMA</div>
                 </footer>
                 <footer id="puma" className="PUMA">
                     {pumaList.map((item, index) => (
@@ -312,7 +317,10 @@ function App(): JSX.Element {
             </body>
             <footer className="WISHLIST">
                 <div id="wishlist" className="header">
-                    Wish List
+                    {role === "Customer" && <div>Wish List</div>}
+                    {(role === "Employee" || role === "Owner") && (
+                        <div>Edit Area</div>
+                    )}
                 </div>
                 <WishListSort
                     sneakers={currList}
