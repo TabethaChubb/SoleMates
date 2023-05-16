@@ -4,6 +4,7 @@ import { Form, Button } from "react-bootstrap";
 
 interface ShoeFormProps {
     onAddShoe: (newShoe: NewShoe) => void;
+    onCancel: () => void;
 }
 
 export interface NewShoe {
@@ -14,10 +15,9 @@ export interface NewShoe {
     sizes: string;
 }
 
-export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
+export function ShoeForm({ onAddShoe, onCancel }: ShoeFormProps): JSX.Element {
     const [model, setModel] = useState("");
     const [brand, setBrand] = useState("");
-
     const [price, setPrice] = useState("");
     const [colors, setColors] = useState("");
     const [sizes, setSizes] = useState("");
@@ -41,10 +41,20 @@ export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
         setSizes("");
     };
 
+    const handleCancel = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        onCancel();
+
+        setModel("");
+        setPrice("");
+        setColors("");
+        setSizes("");
+    };
+
     return (
         <div className="add-shoe-form">
             <h2>Add Shoe to Inventory</h2>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} onReset={handleCancel}>
                 <Form.Group controlId="modelInput">
                     <Form.Label>Model:</Form.Label>
                     <Form.Control
@@ -85,9 +95,21 @@ export function ShoeForm({ onAddShoe }: ShoeFormProps): JSX.Element {
                         onChange={(event) => setSizes(event.target.value)}
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Add Shoe
-                </Button>
+                <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                    className="button-container"
+                >
+                    <Button
+                        style={{ backgroundColor: "red", marginRight: 10 }}
+                        variant="primary"
+                        type="reset"
+                    >
+                        Cancel
+                    </Button>
+                    <Button variant="primary" type="submit">
+                        Add Shoe
+                    </Button>
+                </div>
             </Form>
         </div>
     );

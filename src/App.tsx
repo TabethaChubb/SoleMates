@@ -16,7 +16,7 @@ import { Button, Form } from "react-bootstrap";
 import { ShoeForm, NewShoe } from "./components/AddShoe";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>();
+    const [role, setRole] = useState<string>("Customer");
     const [currList, setWishList] = useState<Sneaker[]>([]);
     const [editList, setEditList] = useState<boolean>(true);
     const [available, setAvailable] = useState<boolean>(true);
@@ -151,6 +151,9 @@ function App(): JSX.Element {
         setCentralList([...currCentralList, sneaker]);
         setShowForm(false);
     };
+    const handleCancel = () => {
+        setShowForm(false);
+    };
     return (
         <div className="App">
             <head>
@@ -217,28 +220,30 @@ function App(): JSX.Element {
                         <img src={logo} alt="Logo" />
                     </div>
                 </nav>
-                <nav className="secondary">
-                    <ul>
-                        <li>
-                            <div
-                                className="wishlistAddDrop-Zone"
-                                onDrop={handleAddDrop}
-                                onDragOver={handleDragOver}
-                            >
-                                ⭐ 🛒
-                            </div>
-                        </li>
-                        <li>
-                            <div
-                                className="wishlistDeleteDrop-Zone"
-                                onDrop={handleDeleteDrop}
-                                onDragOver={handleDragOver}
-                            >
-                                ❌ 🗑️
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                {role === "Customer" && (
+                    <nav className="secondary">
+                        <ul>
+                            <li>
+                                <div
+                                    className="wishlistAddDrop-Zone"
+                                    onDrop={handleAddDrop}
+                                    onDragOver={handleDragOver}
+                                >
+                                    ⭐ 🛒
+                                </div>
+                            </li>
+                            <li>
+                                <div
+                                    className="wishlistDeleteDrop-Zone"
+                                    onDrop={handleDeleteDrop}
+                                    onDragOver={handleDragOver}
+                                >
+                                    ❌ 🗑️
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                )}
                 <header id="homepage">
                     <div className="bg">
                         <div className="content">
@@ -272,7 +277,12 @@ function App(): JSX.Element {
                 {showForm && (
                     <div className="overlay">
                         <div className="add-shoe-form">
-                            {showForm && <ShoeForm onAddShoe={handleAddShoe} />}
+                            {showForm && (
+                                <ShoeForm
+                                    onAddShoe={handleAddShoe}
+                                    onCancel={handleCancel}
+                                />
+                            )}
                         </div>
                     </div>
                 )}
