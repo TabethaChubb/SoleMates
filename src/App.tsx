@@ -282,9 +282,9 @@ function App(): JSX.Element {
                     </div>
                 )}
                 <footer>
-                    <div id="adidas">ADIDAS</div>
+                    <div className="adidasHead">ADIDAS</div>
                 </footer>
-                <footer className="ADIDAS">
+                <footer id="adidas" className="ADIDAS">
                     {adidasList.map((item, index) => (
                         <div key={index}>
                             <ShoeCard sneaker={item}></ShoeCard>
@@ -293,7 +293,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer>
-                    <div id="nike">NIKE</div>
+                    <div className="nikeHead">NIKE</div>
                 </footer>
                 <footer id="nike" className="NIKE">
                     {nikeList.map((item, index) => (
@@ -304,7 +304,7 @@ function App(): JSX.Element {
                     <div className="drop"></div>
                 </footer>
                 <footer>
-                    <div id="puma">PUMA</div>
+                    <div className="pumaHead">PUMA</div>
                 </footer>
                 <footer id="puma" className="PUMA">
                     {pumaList.map((item, index) => (
