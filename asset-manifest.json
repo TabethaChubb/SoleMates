@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Team7_Solemates/static/css/main.3e8d947a.css",
+    "main.css": "/Team7_Solemates/static/css/main.98f4eb1a.css",
     "main.js": "/Team7_Solemates/static/js/main.08a4e66b.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
@@ -36,12 +36,12 @@
     "static/media/NMD_R1 Refined Shoe.jpg": "/Team7_Solemates/static/media/NMD_R1 Refined Shoe.4996c0e23b2e0920e109.jpg",
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
-    "main.3e8d947a.css.map": "/Team7_Solemates/static/css/main.3e8d947a.css.map",
+    "main.98f4eb1a.css.map": "/Team7_Solemates/static/css/main.98f4eb1a.css.map",
     "main.08a4e66b.js.map": "/Team7_Solemates/static/js/main.08a4e66b.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e8d947a.css",
+    "static/css/main.98f4eb1a.css",
     "static/js/main.08a4e66b.js"
   ]
 }

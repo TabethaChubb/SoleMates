@@ -60,7 +60,7 @@ All files           |   14.28 |        0 |   16.66 |   14.38 |
   CentralList.tsx   |       0 |      100 |     100 |       0 | 33                
   NikeSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   Pumma.tsx         |       0 |      100 |       0 |       0 | 5-6               
-  nike.tsx          |       0 |      100 |       0 |       0 | 8-189             
+  nike.tsx          |       0 |      100 |       0 |       0 | 8-200             
  src/components     |   33.87 |      100 |   37.03 |   34.42 |                   
   AddShoe.tsx       |       0 |      100 |       0 |       0 | 19-96             
   RoleAddDelete.tsx |       0 |      100 |       0 |       0 | 12-40             
@@ -74,5 +74,5 @@ All files           |   14.28 |        0 |   16.66 |   14.38 |
 Test Suites: 3 passed, 3 total
 Tests:       15 passed, 15 total
 Snapshots:   0 total
-Time:        5.366 s
+Time:        4.012 s
 Ran all test suites.
