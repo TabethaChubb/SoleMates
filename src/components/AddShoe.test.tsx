@@ -52,3 +52,13 @@ test("renders the correct label text for each input field", () => {
     ) as HTMLLabelElement;
     expect(sizesLabel).toBeInTheDocument();
 });
+
+test("calls onAddShoe one time when submitted", () => {
+    const onAddShoeMock = jest.fn();
+    render(<ShoeForm onAddShoe={onAddShoeMock} />);
+
+    const addShoeButton = screen.getByText("Add Shoe") as HTMLButtonElement;
+    fireEvent.click(addShoeButton);
+
+    expect(onAddShoeMock).toHaveBeenCalledTimes(1);
+});
