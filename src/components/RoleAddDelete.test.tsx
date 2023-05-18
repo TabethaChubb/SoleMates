@@ -41,3 +41,23 @@ test("should delete a user from the roles list", () => {
 
     expect(onRoleChange).toHaveBeenCalledWith(["User"]);
 });
+
+test("should clear input field after adding a user", () => {
+    const defaultRoles = ["Admin", "User"];
+    const onRoleChange = jest.fn();
+
+    const { getByText, getByPlaceholderText } = render(
+        <UserListChange
+            defaultRoles={defaultRoles}
+            onRoleChange={onRoleChange}
+        />
+    );
+
+    const userInput = getByPlaceholderText("Enter username");
+    const addUserButton = getByText("Add User");
+
+    fireEvent.change(userInput, { target: { value: "NewUser" } });
+    fireEvent.click(addUserButton);
+
+    expect((userInput as HTMLInputElement).value).toBe("");
+});
