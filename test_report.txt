@@ -72,11 +72,12 @@ PASS src/components/Shoe_Card.test.tsx
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
+PASS src/components/AddShoe.test.tsx
 PASS src/components/WishListSort.test.tsx
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   25.85 |        0 |   28.33 |   25.34 |                   
+All files           |   37.41 |        0 |   33.33 |   36.98 |                   
  src                |       0 |        0 |       0 |       0 |                   
   AddiSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   App.tsx           |       0 |        0 |       0 |       0 | 19-311            
@@ -84,8 +85,8 @@ All files           |   25.85 |        0 |   28.33 |   25.34 |
   NikeSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   Pumma.tsx         |       0 |      100 |       0 |       0 | 5-6               
   nike.tsx          |       0 |      100 |       0 |       0 | 8-200             
- src/components     |   61.29 |      100 |   62.96 |   60.65 |                   
-  AddShoe.tsx       |       0 |      100 |       0 |       0 | 19-96             
+ src/components     |    88.7 |      100 |   74.07 |   88.52 |                   
+  AddShoe.tsx       |   77.27 |      100 |    37.5 |   77.27 | 64-96             
   RoleAddDelete.tsx |     100 |      100 |     100 |     100 |                   
   Shoe_Card.tsx     |   85.71 |      100 |   71.42 |   85.71 | 20,40             
   WishListSort.tsx  |     100 |      100 |     100 |     100 |                   
@@ -94,8 +95,8 @@ All files           |   25.85 |        0 |   28.33 |   25.34 |
   sneaker.ts        |       0 |        0 |       0 |       0 |                   
 --------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 4 passed, 4 total
-Tests:       20 passed, 20 total
+Test Suites: 5 passed, 5 total
+Tests:       25 passed, 25 total
 Snapshots:   0 total
-Time:        4.399 s
+Time:        4.747 s
 Ran all test suites.
