@@ -120,10 +120,15 @@ function App(): JSX.Element {
         const droppedSneaker = JSON.parse(
             event.dataTransfer.getData("application/json")
         ) as Sneaker;
-        setWishList(
-            currList.filter(
-                (shoe: Sneaker): boolean => shoe.model !== droppedSneaker.model
-            )
+        setWishList((prevList) =>
+            prevList.filter((shoe: Sneaker) => {
+                // Check if the dropped shoe has the same model, size, and color
+                return (
+                    shoe.model !== droppedSneaker.model ||
+                    shoe.selectedSize !== droppedSneaker.selectedSize ||
+                    shoe.selectedColor !== droppedSneaker.selectedColor
+                );
+            })
         );
     };
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
