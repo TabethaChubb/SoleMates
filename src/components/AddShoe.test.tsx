@@ -3,7 +3,7 @@ import { render, fireEvent, screen } from "@testing-library/react";
 import { ShoeForm } from "./AddShoe";
 
 test("updates form inputs correctly", () => {
-    render(<ShoeForm onAddShoe={jest.fn()} />);
+    render(<ShoeForm onAddShoe={jest.fn()} onCancel={jest.fn()} />);
 
     const modelInput = screen.getByLabelText("Model:") as HTMLInputElement;
     fireEvent.change(modelInput, { target: { value: "Nike Air Max" } });
@@ -11,7 +11,7 @@ test("updates form inputs correctly", () => {
 });
 
 test("clears form inputs after submission", () => {
-    render(<ShoeForm onAddShoe={jest.fn()} />);
+    render(<ShoeForm onAddShoe={jest.fn()} onCancel={jest.fn()} />);
 
     const addShoeButton = screen.getByText("Add Shoe") as HTMLButtonElement;
     fireEvent.click(addShoeButton);
@@ -21,14 +21,14 @@ test("clears form inputs after submission", () => {
 });
 
 test("renders with the correct title", () => {
-    render(<ShoeForm onAddShoe={jest.fn()} />);
+    render(<ShoeForm onAddShoe={jest.fn()} onCancel={jest.fn()} />);
 
     const title = screen.getByText("Add Shoe to Inventory");
     expect(title).toBeInTheDocument();
 });
 
 test("renders the correct label text for each input field", () => {
-    render(<ShoeForm onAddShoe={jest.fn()} />);
+    render(<ShoeForm onAddShoe={jest.fn()} onCancel={jest.fn()} />);
 
     const modelLabel = screen.getByLabelText("Model:") as HTMLLabelElement;
     expect(modelLabel).toBeInTheDocument();
@@ -53,9 +53,10 @@ test("renders the correct label text for each input field", () => {
     expect(sizesLabel).toBeInTheDocument();
 });
 
-test("calls onAddShoe one time when submitted", () => {
+test("calls onAddShoe one time when submitted or cancel once if it is clicked", () => {
     const onAddShoeMock = jest.fn();
-    render(<ShoeForm onAddShoe={onAddShoeMock} />);
+    const cancelShoeMock = jest.fn();
+    render(<ShoeForm onAddShoe={onAddShoeMock} onCancel={cancelShoeMock} />);
 
     const addShoeButton = screen.getByText("Add Shoe") as HTMLButtonElement;
     fireEvent.click(addShoeButton);
