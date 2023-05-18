@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import UserListChange from "./RoleAddDelete";
