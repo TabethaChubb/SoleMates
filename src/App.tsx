@@ -220,7 +220,7 @@ function App(): JSX.Element {
                         <img src={logo} alt="Logo" />
                     </div>
                 </nav>
-                {role === "Customer" && (
+                {role !== "Owner" && role !== "Employee" && (
                     <nav className="secondary">
                         <ul>
                             <li>
