@@ -4,7 +4,7 @@ import React from "react";
 import R1 from "../src/images/airf.jpg";
 import two from "../src/images/270.jpg";
 import Airmax270 from "../src/images/Airmax270.png";
-
+import gts from "../src/images/gts.jpg";
 const inventory: Sneaker[] = [
     {
         model: "Air Force",
@@ -167,6 +167,17 @@ const inventory: Sneaker[] = [
         price: 250,
         outOfStock: false,
         image: two
+    },
+    {
+        model: "Reto GTS",
+        colors: ["white", "black", "Phantom", "Red", "Green", "yellow"],
+        selectedColor: "",
+        brand: "Nike",
+        size: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+        selectedSize: NaN,
+        price: 200,
+        outOfStock: false,
+        image: gts
     }
 ];
 
