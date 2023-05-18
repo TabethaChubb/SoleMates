@@ -2,6 +2,29 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
+PASS src/components/RoleAddDelete.test.tsx
+  ● Console
+
+    console.log
+      Adding user:  NewUser
+
+      at handleAddUser (src/components/RoleAddDelete.tsx:30:17)
+
+    console.log
+      Deleting user:  Admin
+
+      at handleDeleteUser (src/components/RoleAddDelete.tsx:36:17)
+
+    console.log
+      Adding user:  NewUser
+
+      at handleAddUser (src/components/RoleAddDelete.tsx:30:17)
+
+    console.log
+      Deleting user:  Admin
+
+      at handleDeleteUser (src/components/RoleAddDelete.tsx:36:17)
+
 PASS src/components/userWishlist.test.tsx
   ● Console
 
@@ -53,7 +76,7 @@ PASS src/components/WishListSort.test.tsx
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   14.28 |        0 |   16.66 |   14.38 |                   
+All files           |   25.85 |        0 |   28.33 |   25.34 |                   
  src                |       0 |        0 |       0 |       0 |                   
   AddiSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   App.tsx           |       0 |        0 |       0 |       0 | 19-311            
@@ -61,9 +84,9 @@ All files           |   14.28 |        0 |   16.66 |   14.38 |
   NikeSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   Pumma.tsx         |       0 |      100 |       0 |       0 | 5-6               
   nike.tsx          |       0 |      100 |       0 |       0 | 8-200             
- src/components     |   33.87 |      100 |   37.03 |   34.42 |                   
+ src/components     |   61.29 |      100 |   62.96 |   60.65 |                   
   AddShoe.tsx       |       0 |      100 |       0 |       0 | 19-96             
-  RoleAddDelete.tsx |       0 |      100 |       0 |       0 | 12-40             
+  RoleAddDelete.tsx |     100 |      100 |     100 |     100 |                   
   Shoe_Card.tsx     |   85.71 |      100 |   71.42 |   85.71 | 20,40             
   WishListSort.tsx  |     100 |      100 |     100 |     100 |                   
   userWishList.tsx  |     100 |      100 |     100 |     100 |                   
@@ -71,8 +94,8 @@ All files           |   14.28 |        0 |   16.66 |   14.38 |
   sneaker.ts        |       0 |        0 |       0 |       0 |                   
 --------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 3 passed, 3 total
-Tests:       15 passed, 15 total
+Test Suites: 4 passed, 4 total
+Tests:       20 passed, 20 total
 Snapshots:   0 total
-Time:        4.183 s
+Time:        4.399 s
 Ran all test suites.
