@@ -19,3 +19,10 @@ test("clears form inputs after submission", () => {
     const modelInput = screen.getByLabelText("Model:") as HTMLInputElement;
     expect(modelInput.value).toBe("");
 });
+
+test("renders with the correct title", () => {
+    render(<ShoeForm onAddShoe={jest.fn()} />);
+
+    const title = screen.getByText("Add Shoe to Inventory");
+    expect(title).toBeInTheDocument();
+});
