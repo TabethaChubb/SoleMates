@@ -26,3 +26,29 @@ test("renders with the correct title", () => {
     const title = screen.getByText("Add Shoe to Inventory");
     expect(title).toBeInTheDocument();
 });
+
+test("renders the correct label text for each input field", () => {
+    render(<ShoeForm onAddShoe={jest.fn()} />);
+
+    const modelLabel = screen.getByLabelText("Model:") as HTMLLabelElement;
+    expect(modelLabel).toBeInTheDocument();
+
+    const brandLabel = screen.getByLabelText("Brand:") as HTMLLabelElement;
+    expect(brandLabel).toBeInTheDocument();
+
+    const imageLabel = screen.getByLabelText("Image URL:") as HTMLLabelElement;
+    expect(imageLabel).toBeInTheDocument();
+
+    const priceLabel = screen.getByLabelText("Price:") as HTMLLabelElement;
+    expect(priceLabel).toBeInTheDocument();
+
+    const colorsLabel = screen.getByLabelText(
+        "Colors (comma-separated):"
+    ) as HTMLLabelElement;
+    expect(colorsLabel).toBeInTheDocument();
+
+    const sizesLabel = screen.getByLabelText(
+        "Sizes (comma-separated):"
+    ) as HTMLLabelElement;
+    expect(sizesLabel).toBeInTheDocument();
+});
