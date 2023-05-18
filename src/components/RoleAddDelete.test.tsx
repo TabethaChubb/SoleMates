@@ -81,3 +81,21 @@ test("should clear input field after deleting a user", () => {
 
     expect((userInput as HTMLInputElement).value).toBe("");
 });
+
+test("should update the input field value when the user enters a new value", () => {
+    const defaultRoles = ["Admin", "User"];
+    const onRoleChange = jest.fn();
+
+    const { getByPlaceholderText } = render(
+        <UserListChange
+            defaultRoles={defaultRoles}
+            onRoleChange={onRoleChange}
+        />
+    );
+
+    const userInput = getByPlaceholderText("Enter username");
+
+    fireEvent.change(userInput, { target: { value: "NewUser" } });
+
+    expect((userInput as HTMLInputElement).value).toBe("NewUser");
+});
