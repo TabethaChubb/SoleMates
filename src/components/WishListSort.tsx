@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Sneaker } from "../interfaces/sneaker";
 import { Form } from "react-bootstrap";
 
-const FILTERS = ["Brand", "Model Name", "Price", "Color", "Size", "None"];
+const FILTERS = ["Brand", "Model Name", "Price", "None"];
 
 interface SortProp {
     sneakers: Sneaker[];

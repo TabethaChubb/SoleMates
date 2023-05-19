@@ -58,10 +58,6 @@ function App(): JSX.Element {
             return a.model.localeCompare(b.model);
         } else if (sort === "Price") {
             return a.price - b.price;
-        } else if (sort === "Color") {
-            return a.selectedColor.localeCompare(b.selectedColor);
-        } else if (sort === "Size") {
-            return a.selectedSize - b.selectedSize;
         } else {
             return 0; // no sorting
         }
