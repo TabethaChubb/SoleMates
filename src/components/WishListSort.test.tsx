@@ -21,21 +21,14 @@ test("updates sort option and triggers callback on selection", () => {
 test("renders correct number of sorting options", () => {
     render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
     const options = screen.getAllByRole("option");
-    expect(options).toHaveLength(6); // Including the "None" option
+    expect(options).toHaveLength(4); // Including the "None" option
 });
 
 test("renders correct sorting options", () => {
     render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
     const options = screen.getAllByRole("option");
     const optionValues = options.map((option) => option.textContent);
-    expect(optionValues).toEqual([
-        "Brand",
-        "Model Name",
-        "Price",
-        "Color",
-        "Size",
-        "None"
-    ]);
+    expect(optionValues).toEqual(["Brand", "Model Name", "Price", "None"]);
 });
 
 test("updates local state on selection", () => {
