@@ -15,28 +15,6 @@ export function WishList({ sneakers }: WishListProp): JSX.Element {
                     <div key={sneaker.model}>
                         <ShoeCard sneaker={sneaker}></ShoeCard>
                     </div>
-                    // <div
-                    //     key={sneaker.model}
-                    //     className="sneaker-card"
-                    //     draggable="true"
-                    //     onDragStart={(event) => handleDragStart(event, sneaker)}
-                    // >
-                    //     <img
-                    //         src={sneaker.image}
-                    //         alt={sneaker.model}
-                    //         className="sneakerIMAGE"
-                    //     />
-                    //     <div>
-                    //         <h4>{sneaker.model}</h4>
-                    //         Brand:<p className="description">{sneaker.brand}</p>
-                    //         Price:
-                    //         <p className="description"> {sneaker.price}</p>
-                    //         Sizes:
-                    //         <p className="description">
-                    //             {sneaker.size.join(", ")}
-                    //         </p>
-                    //     </div>
-                    // </div>
                 );
             })}
         </div>
