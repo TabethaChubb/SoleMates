@@ -73,14 +73,66 @@ PASS src/components/Shoe_Card.test.tsx
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
 PASS src/components/AddShoe.test.tsx
-PASS src/components/WishListSort.test.tsx
+FAIL src/components/WishListSort.test.tsx
+  ● renders correct number of sorting options
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 6
+    Received length: 4
+    Received array:  [<option value="Brand">Brand</option>, <option value="Model Name">Model Name</option>, <option value="Price">Price</option>, <option value="None">None</option>]
+
+      22 |     render(<WishListSort onSortChange={() => {}} sneakers={[]} />);
+      23 |     const options = screen.getAllByRole("option");
+    > 24 |     expect(options).toHaveLength(6); // Including the "None" option
+         |                     ^
+      25 | });
+      26 |
+      27 | test("renders correct sorting options", () => {
+
+      at Object.<anonymous> (src/components/WishListSort.test.tsx:24:21)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● renders correct sorting options
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 0
+
+      Array [
+        "Brand",
+        "Model Name",
+        "Price",
+    -   "Color",
+    -   "Size",
+        "None",
+      ]
+
+      29 |     const options = screen.getAllByRole("option");
+      30 |     const optionValues = options.map((option) => option.textContent);
+    > 31 |     expect(optionValues).toEqual([
+         |                          ^
+      32 |         "Brand",
+      33 |         "Model Name",
+      34 |         "Price",
+
+      at Object.<anonymous> (src/components/WishListSort.test.tsx:31:26)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   35.89 |        0 |   32.25 |   35.48 |                   
+All files           |    36.6 |        0 |   31.74 |   36.18 |                   
  src                |       0 |        0 |       0 |       0 |                   
   AddiSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
-  App.tsx           |       0 |        0 |       0 |       0 | 19-321            
+  App.tsx           |       0 |        0 |       0 |       0 | 19-322            
   CentralList.tsx   |       0 |      100 |     100 |       0 | 34                
   NikeSneaks.tsx    |       0 |      100 |       0 |       0 | 5-6               
   Pumma.tsx         |       0 |      100 |       0 |       0 | 5-6               
@@ -94,9 +146,8 @@ All files           |   35.89 |        0 |   32.25 |   35.48 |
  src/interfaces     |       0 |        0 |       0 |       0 |                   
   sneaker.ts        |       0 |        0 |       0 |       0 |                   
 --------------------|---------|----------|---------|---------|-------------------
-
-Test Suites: 5 passed, 5 total
-Tests:       25 passed, 25 total
+Test Suites: 1 failed, 4 passed, 5 total
+Tests:       2 failed, 23 passed, 25 total
 Snapshots:   0 total
-Time:        6.923 s
+Time:        4.996 s
 Ran all test suites.

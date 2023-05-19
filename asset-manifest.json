@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Team7_Solemates/static/css/main.3e8d947a.css",
-    "main.js": "/Team7_Solemates/static/js/main.a013de35.js",
+    "main.css": "/Team7_Solemates/static/css/main.02ce4f6a.css",
+    "main.js": "/Team7_Solemates/static/js/main.f27330cf.js",
     "static/js/787.4ef7427d.chunk.js": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js",
     "static/media/dosisFont.ttf": "/Team7_Solemates/static/media/dosisFont.50346366837ca02cca28.ttf",
     "static/media/pumanitro.jpg": "/Team7_Solemates/static/media/pumanitro.f479036f8ff84a00f646.jpg",
@@ -37,12 +37,12 @@
     "static/media/NMD_R1 Refined Shoe.jpg": "/Team7_Solemates/static/media/NMD_R1 Refined Shoe.4996c0e23b2e0920e109.jpg",
     "static/media/StanSmith.jpg": "/Team7_Solemates/static/media/StanSmith.88acded22ac8f0467af3.jpg",
     "index.html": "/Team7_Solemates/index.html",
-    "main.3e8d947a.css.map": "/Team7_Solemates/static/css/main.3e8d947a.css.map",
-    "main.a013de35.js.map": "/Team7_Solemates/static/js/main.a013de35.js.map",
+    "main.02ce4f6a.css.map": "/Team7_Solemates/static/css/main.02ce4f6a.css.map",
+    "main.f27330cf.js.map": "/Team7_Solemates/static/js/main.f27330cf.js.map",
     "787.4ef7427d.chunk.js.map": "/Team7_Solemates/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e8d947a.css",
-    "static/js/main.a013de35.js"
+    "static/css/main.02ce4f6a.css",
+    "static/js/main.f27330cf.js"
   ]
 }
